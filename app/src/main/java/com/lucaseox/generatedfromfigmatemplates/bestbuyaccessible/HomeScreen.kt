@@ -1,4 +1,4 @@
-package com.lucaseox.generatedfromfigmatemplates.bestbuy
+package com.lucaseox.generatedfromfigmatemplates.bestbuyaccessible
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -32,7 +32,7 @@ import androidx.compose.ui.unit.sp
 import com.lucaseox.generatedfromfigmatemplates.R
 
 @Composable
-fun BestBuyHome() {
+fun BestBuyHomeAccessible() {
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -69,7 +69,7 @@ fun HeaderSection() {
         TextField(
             value = "",
             onValueChange = {},
-            placeholder = { Text(text = "Search BestBuy") },
+            placeholder = { Text(text = "Search BestBuy", color = Color(0xFFE0E0E0)) },
             modifier = Modifier
                 .fillMaxWidth()
                 .height(48.dp),
@@ -87,7 +87,7 @@ fun DealOfTheDaySection() {
         modifier = Modifier.padding(16.dp)
     ) {
         Text("Deal Of The Day", fontSize = 20.sp, fontWeight = FontWeight.Bold)
-        Text("⏰ Time left, hurry up", fontSize = 14.sp, color = Color.Gray)
+        Text("⏰ Time left, hurry up", fontSize = 14.sp, color = Color(0xFF757575))
         Row(
             modifier = Modifier.padding(vertical = 8.dp),
             verticalAlignment = Alignment.CenterVertically
@@ -111,7 +111,7 @@ fun DealOfTheDaySection() {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Text("$1,299", fontSize = 20.sp, fontWeight = FontWeight.Bold)
                     Spacer(modifier = Modifier.width(8.dp))
-                    Text("SAVE $300", color = Color.Red, fontWeight = FontWeight.Bold)
+                    Text("SAVE $300", color = Color(0xFFB00020), fontWeight = FontWeight.Bold)
                 }
             }
         }
@@ -134,7 +134,7 @@ fun TimeBox(time: String, label: String) {
 @Composable
 fun PopularPicksSection() {
     Column(modifier = Modifier.padding(16.dp)) {
-        Text("Based on what’s trending", fontSize = 16.sp, color = Color.Gray)
+        Text("Based on what’s trending", fontSize = 16.sp, color = Color(0xFF616161))
         Text("Today’s popular picks", fontSize = 20.sp, fontWeight = FontWeight.Bold)
         Spacer(modifier = Modifier.height(8.dp))
         Row(horizontalArrangement = Arrangement.SpaceBetween) {

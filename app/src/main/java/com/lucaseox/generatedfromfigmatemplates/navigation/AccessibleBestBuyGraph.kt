@@ -5,11 +5,15 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import com.lucaseox.generatedfromfigmatemplates.GridScreen
+import com.lucaseox.generatedfromfigmatemplates.bestbuyaccessible.BestBuyHomeAccessible
 
 fun NavGraphBuilder.accessibleBestBuyGraph(navController: NavHostController) {
     navigation<Router.AccessibleBestBuy.Route>(startDestination = Router.AccessibleBestBuy.MenuScreen) {
         composable<Router.AccessibleBestBuy.MenuScreen> {
             GridScreen(navController, accessibleBestBuyMenuButtons)
+        }
+        composable<Router.AccessibleBestBuy.HomeScreen> {
+            BestBuyHomeAccessible()
         }
     }
 }
