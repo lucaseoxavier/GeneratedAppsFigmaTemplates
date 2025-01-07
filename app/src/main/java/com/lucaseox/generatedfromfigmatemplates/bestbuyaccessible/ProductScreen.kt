@@ -1,4 +1,5 @@
-package com.lucaseox.generatedfromfigmatemplates.bestbuy
+package com.lucaseox.generatedfromfigmatemplates.bestbuyaccessible
+
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -34,7 +35,10 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.semantics.contentDescription
+import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -42,7 +46,7 @@ import com.lucaseox.generatedfromfigmatemplates.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ProductDetailsScreen() {
+fun ProductDetailsScreenAccessible() {
     val scrollState = rememberScrollState()
 
     Column(
@@ -54,7 +58,7 @@ fun ProductDetailsScreen() {
             title = { Text("PC Laptops", fontSize = 18.sp, fontWeight = FontWeight.Bold) },
             navigationIcon = {
                 IconButton(onClick = { /* Navigate back */ }) {
-                    Icon(Icons.Default.ArrowBack, contentDescription = "Back")
+                    Icon(Icons.Default.ArrowBack, contentDescription = "Navigate back")
                 }
             },
             actions = {
@@ -95,7 +99,7 @@ fun ProductDetailsScreen() {
                 Text(
                     text = "SAVE $300",
                     style = MaterialTheme.typography.bodyMedium,
-                    color = Color.Red,
+                    color = Color(0xFFB00020), // High contrast red
                     fontWeight = FontWeight.Bold
                 )
             }
@@ -105,13 +109,13 @@ fun ProductDetailsScreen() {
                 Text(
                     text = "\u2605\u2605\u2605\u2605\u2606",
                     style = MaterialTheme.typography.bodyMedium,
-                    color = Color(0xFFFFC107)
+                    color = Color(0xFF000000) // High contrast black
                 )
                 Spacer(modifier = Modifier.width(4.dp))
                 Text(
                     text = "(4,201)",
                     style = MaterialTheme.typography.bodyMedium,
-                    color = Color.Gray
+                    color = Color(0xFF000000) // High contrast black
                 )
             }
         }
@@ -120,10 +124,11 @@ fun ProductDetailsScreen() {
 
         Image(
             painter = painterResource(id = R.drawable.laptop_image),
-            contentDescription = "Laptop Image",
+            contentDescription = "Image of ASUS Vivobook laptop",
             modifier = Modifier
                 .fillMaxWidth()
-                .height(200.dp)
+                .height(200.dp),
+            colorFilter = ColorFilter.tint(Color.Gray) // Ensures accessibility
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -133,10 +138,10 @@ fun ProductDetailsScreen() {
             horizontalArrangement = Arrangement.spacedBy(8.dp),
             contentPadding = PaddingValues(horizontal = 16.dp)
         ) {
-            items(4) {
+            items(4) { index ->
                 Image(
                     painter = painterResource(id = R.drawable.laptop_image),
-                    contentDescription = "Thumbnail",
+                    contentDescription = "Thumbnail image $index of ASUS Vivobook laptop",
                     modifier = Modifier
                         .size(80.dp)
                         .padding(4.dp)
@@ -157,11 +162,11 @@ fun ProductDetailsScreen() {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        ExpandableSection("Overview") {}
-        ExpandableSection("Specifications") {}
-        ExpandableSection("Reviews") {}
-        ExpandableSection("Questions & Answers") {}
-        ExpandableSection("Buying Options") {}
+        ExpandableSection("Overview", "Tap to expand Overview section") {}
+        ExpandableSection("Specifications", "Tap to expand Specifications section") {}
+        ExpandableSection("Reviews", "Tap to expand Reviews section") {}
+        ExpandableSection("Questions & Answers", "Tap to expand Questions & Answers section") {}
+        ExpandableSection("Buying Options", "Tap to expand Buying Options section") {}
 
         Spacer(modifier = Modifier.height(16.dp))
 
@@ -174,7 +179,7 @@ fun ProductDetailsScreen() {
             Text(
                 text = "Our experts recommend",
                 style = MaterialTheme.typography.bodyMedium,
-                color = Color.Gray
+                color = Color(0xFF000000) // High contrast black
             )
         }
 
@@ -183,8 +188,8 @@ fun ProductDetailsScreen() {
             horizontalArrangement = Arrangement.spacedBy(16.dp),
             contentPadding = PaddingValues(horizontal = 16.dp)
         ) {
-            items(3) {
-                RecommendedProductCard()
+            items(3) { index ->
+                RecommendedProductCard(index)
             }
         }
 
@@ -214,10 +219,14 @@ fun ProductDetailRow(label: String, value: String) {
 }
 
 @Composable
-fun ExpandableSection(title: String, content: @Composable () -> Unit) {
+fun ExpandableSection(title: String, contentDescription: String, content: @Composable () -> Unit) {
     val expanded = remember { mutableStateOf(false) }
 
-    Column(modifier = Modifier.fillMaxWidth()) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .semantics { this.contentDescription = contentDescription }
+    ) {
         Row(
             modifier = Modifier
                 .fillMaxWidth()
@@ -228,7 +237,7 @@ fun ExpandableSection(title: String, content: @Composable () -> Unit) {
             IconButton(onClick = { expanded.value = !expanded.value }) {
                 Icon(
                     if (expanded.value) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
-                    contentDescription = "Expand/Collapse"
+                    contentDescription = if (expanded.value) "Collapse $title section" else "Expand $title section"
                 )
             }
         }
@@ -239,21 +248,22 @@ fun ExpandableSection(title: String, content: @Composable () -> Unit) {
 }
 
 @Composable
-fun RecommendedProductCard() {
+fun RecommendedProductCard(index: Int) {
     Column(
         modifier = Modifier
             .width(150.dp)
             .padding(8.dp)
+            .semantics { this.contentDescription = "Recommended Product $index" }
     ) {
         Image(
             painter = painterResource(id = R.drawable.laptop_image),
-            contentDescription = "Recommended Product",
+            contentDescription = "Image of recommended product $index",
             modifier = Modifier
                 .fillMaxWidth()
                 .height(100.dp)
         )
-        Text("Product Name", fontWeight = FontWeight.Bold)
+        Text("Product Name $index", fontWeight = FontWeight.Bold)
         Text("$499", fontWeight = FontWeight.Bold, color = Color.Black)
-        Text("\u2605\u2605\u2605\u2605\u2606", color = Color(0xFFFFC107))
+        Text("\u2605\u2605\u2605\u2605\u2606", color = Color(0xFF000000)) // High contrast black
     }
 }
