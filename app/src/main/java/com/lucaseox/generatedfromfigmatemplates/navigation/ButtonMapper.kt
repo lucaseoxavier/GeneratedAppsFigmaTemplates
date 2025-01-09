@@ -94,3 +94,47 @@ val accessibleAnimalWikiMenuButtons = listOf(
     Router.AccessibleAnimalWiki.DashboardScreen.name to   Router.AccessibleAnimalWiki.DashboardScreen,
     Router.AccessibleAnimalWiki.AnimalScreen.name to      Router.AccessibleAnimalWiki.AnimalScreen
 )
+
+val RSPCAMenuButtons = listOf(
+    Router.RSPCA.StartScreen.name to            Router.RSPCA.StartScreen,
+    Router.RSPCA.LoginScreen.name to            Router.RSPCA.LoginScreen,
+    Router.RSPCA.HomeScreen.name to             Router.RSPCA.HomeScreen,
+    Router.RSPCA.RegisterPetScreen.name to      Router.RSPCA.RegisterPetScreen,
+    Router.RSPCA.DogScreen.name to              Router.RSPCA.DogScreen,
+    Router.RSPCA.RegisterDogScreen.name to      Router.RSPCA.RegisterDogScreen,
+    Router.RSPCA.AdoptionScreen.name to         Router.RSPCA.AdoptionScreen,
+    Router.RSPCA.AdoptionFormScreen.name to     Router.RSPCA.AdoptionFormScreen,
+    Router.RSPCA.ServicesScreen.name to         Router.RSPCA.ServicesScreen,
+    Router.RSPCA.CurrentPetsScreen.name to      Router.RSPCA.CurrentPetsScreen,
+    Router.RSPCA.VetScreen.name to              Router.RSPCA.VetScreen,
+    Router.RSPCA.GroomingScreen.name to         Router.RSPCA.GroomingScreen,
+    Router.RSPCA.MapScreen.name to              Router.RSPCA.MapScreen,
+    Router.RSPCA.PetInfoScreen.name to          Router.RSPCA.PetInfoScreen,
+    Router.RSPCA.DietScreen.name to             Router.RSPCA.DietScreen,
+    Router.RSPCA.BMIScreen.name to              Router.RSPCA.BMIScreen,
+    Router.RSPCA.ExerciseScreen.name to         Router.RSPCA.ExerciseScreen,
+    Router.RSPCA.WalkScreen.name to             Router.RSPCA.WalkScreen,
+    Router.RSPCA.WalkRecordScreen.name to       Router.RSPCA.WalkRecordScreen
+)
+
+val accessibleRSPCAMenuButtons = listOf(
+    Router.AccessibleRSPCA.StartScreen.name to            Router.AccessibleRSPCA.StartScreen,
+    Router.AccessibleRSPCA.LoginScreen.name to            Router.AccessibleRSPCA.LoginScreen,
+    Router.AccessibleRSPCA.HomeScreen.name to             Router.AccessibleRSPCA.HomeScreen,
+    Router.AccessibleRSPCA.RegisterPetScreen.name to      Router.AccessibleRSPCA.RegisterPetScreen,
+    Router.AccessibleRSPCA.DogScreen.name to              Router.AccessibleRSPCA.DogScreen,
+    Router.AccessibleRSPCA.RegisterDogScreen.name to      Router.AccessibleRSPCA.RegisterDogScreen,
+    Router.AccessibleRSPCA.AdoptionScreen.name to         Router.AccessibleRSPCA.AdoptionScreen,
+    Router.AccessibleRSPCA.AdoptionFormScreen.name to     Router.AccessibleRSPCA.AdoptionFormScreen,
+    Router.AccessibleRSPCA.ServicesScreen.name to         Router.AccessibleRSPCA.ServicesScreen,
+    Router.AccessibleRSPCA.CurrentPetsScreen.name to      Router.AccessibleRSPCA.CurrentPetsScreen,
+    Router.AccessibleRSPCA.VetScreen.name to              Router.AccessibleRSPCA.VetScreen,
+    Router.AccessibleRSPCA.GroomingScreen.name to         Router.AccessibleRSPCA.GroomingScreen,
+    Router.AccessibleRSPCA.MapScreen.name to              Router.AccessibleRSPCA.MapScreen,
+    Router.AccessibleRSPCA.PetInfoScreen.name to          Router.AccessibleRSPCA.PetInfoScreen,
+    Router.AccessibleRSPCA.DietScreen.name to             Router.AccessibleRSPCA.DietScreen,
+    Router.AccessibleRSPCA.BMIScreen.name to              Router.AccessibleRSPCA.BMIScreen,
+    Router.AccessibleRSPCA.ExerciseScreen.name to         Router.AccessibleRSPCA.ExerciseScreen,
+    Router.AccessibleRSPCA.WalkScreen.name to             Router.AccessibleRSPCA.WalkScreen,
+    Router.AccessibleRSPCA.WalkRecordScreen.name to       Router.AccessibleRSPCA.WalkRecordScreen
+)

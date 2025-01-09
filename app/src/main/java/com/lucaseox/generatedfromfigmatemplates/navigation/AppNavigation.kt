@@ -11,6 +11,8 @@ import com.lucaseox.generatedfromfigmatemplates.navigation.bca.accessibleBcaGrap
 import com.lucaseox.generatedfromfigmatemplates.navigation.bca.bcaGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.bestbuy.accessibleBestBuyGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.bestbuy.bestBuyGraph
+import com.lucaseox.generatedfromfigmatemplates.navigation.rspca.accessibleRspcaGraph
+import com.lucaseox.generatedfromfigmatemplates.navigation.rspca.rspcaGraph
 
 @Composable
 fun AppNavigation(
@@ -32,5 +34,8 @@ fun AppNavigation(
 
         animalWikiGraph(navController)
         accessibleAnimalWikiGraph(navController)
+
+        rspcaGraph(navController)
+        accessibleRspcaGraph(navController)
     }
 }
