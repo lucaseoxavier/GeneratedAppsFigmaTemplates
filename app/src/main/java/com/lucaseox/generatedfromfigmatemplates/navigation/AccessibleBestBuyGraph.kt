@@ -7,6 +7,7 @@ import androidx.navigation.compose.navigation
 import com.lucaseox.generatedfromfigmatemplates.GridScreen
 import com.lucaseox.generatedfromfigmatemplates.bestbuyaccessible.BestBuyHomeAccessible
 import com.lucaseox.generatedfromfigmatemplates.bestbuyaccessible.CartScreenAccessible
+import com.lucaseox.generatedfromfigmatemplates.bestbuyaccessible.CheckoutScreenAccessible
 import com.lucaseox.generatedfromfigmatemplates.bestbuyaccessible.ProductDetailsScreenAccessible
 
 fun NavGraphBuilder.accessibleBestBuyGraph(navController: NavHostController) {
@@ -22,6 +23,9 @@ fun NavGraphBuilder.accessibleBestBuyGraph(navController: NavHostController) {
         }
         composable<Router.AccessibleBestBuy.CartScreen> {
             CartScreenAccessible()
+        }
+        composable<Router.AccessibleBestBuy.CheckoutScreen> {
+            CheckoutScreenAccessible()
         }
     }
 }
