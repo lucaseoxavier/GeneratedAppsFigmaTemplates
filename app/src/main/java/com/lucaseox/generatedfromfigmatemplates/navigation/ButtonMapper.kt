@@ -80,3 +80,17 @@ val accessibleBcaMenuButtons = listOf(
     Router.AccessibleBCA.SetLimitScreen.name to           Router.AccessibleBCA.SetLimitScreen,
     Router.AccessibleBCA.BlockScreen.name to              Router.AccessibleBCA.BlockScreen,
 )
+
+val animalWikiMenuButtons = listOf(
+    Router.AnimalWiki.SplashScreen.name to      Router.AnimalWiki.SplashScreen,
+    Router.AnimalWiki.LoginScreen.name to       Router.AnimalWiki.LoginScreen,
+    Router.AnimalWiki.DashboardScreen.name to   Router.AnimalWiki.DashboardScreen,
+    Router.AnimalWiki.AnimalScreen.name to      Router.AnimalWiki.AnimalScreen
+)
+
+val accessibleAnimalWikiMenuButtons = listOf(
+    Router.AccessibleAnimalWiki.SplashScreen.name to      Router.AccessibleAnimalWiki.SplashScreen,
+    Router.AccessibleAnimalWiki.LoginScreen.name to       Router.AccessibleAnimalWiki.LoginScreen,
+    Router.AccessibleAnimalWiki.DashboardScreen.name to   Router.AccessibleAnimalWiki.DashboardScreen,
+    Router.AccessibleAnimalWiki.AnimalScreen.name to      Router.AccessibleAnimalWiki.AnimalScreen
+)

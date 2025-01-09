@@ -84,12 +84,20 @@ sealed class Router {
     sealed class AnimalWiki(val name: String) : Router() {
         @Serializable data object Route : AnimalWiki("Animal Wiki Route")
         @Serializable data object MenuScreen : AnimalWiki("Animal Wiki Menu")
+        @Serializable data object SplashScreen : AnimalWiki("Splash Screen")
+        @Serializable data object LoginScreen : AnimalWiki("Login Screen")
+        @Serializable data object DashboardScreen : AnimalWiki("Dashboard Screen")
+        @Serializable data object AnimalScreen : AnimalWiki("Animal Screen")
     }
 
     @Serializable
     sealed class AccessibleAnimalWiki(val name: String) : Router() {
         @Serializable data object Route : AccessibleAnimalWiki("Accessible Animal Wiki Route")
         @Serializable data object MenuScreen : AccessibleAnimalWiki("Accessible Animal Wiki Menu")
+        @Serializable data object SplashScreen : AccessibleAnimalWiki("Splash Screen")
+        @Serializable data object LoginScreen : AccessibleAnimalWiki("Login Screen")
+        @Serializable data object DashboardScreen : AccessibleAnimalWiki("Dashboard Screen")
+        @Serializable data object AnimalScreen : AccessibleAnimalWiki("Animal Screen")
     }
 
     @Serializable
