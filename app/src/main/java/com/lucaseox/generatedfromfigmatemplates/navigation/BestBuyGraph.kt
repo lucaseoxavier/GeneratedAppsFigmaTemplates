@@ -6,6 +6,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
 import com.lucaseox.generatedfromfigmatemplates.GridScreen
 import com.lucaseox.generatedfromfigmatemplates.bestbuy.BestBuyHome
+import com.lucaseox.generatedfromfigmatemplates.bestbuy.CartScreen
 import com.lucaseox.generatedfromfigmatemplates.bestbuy.ProductDetailsScreen
 
 fun NavGraphBuilder.bestBuyGraph(navController: NavHostController) {
@@ -18,6 +19,9 @@ fun NavGraphBuilder.bestBuyGraph(navController: NavHostController) {
         }
         composable<Router.BestBuy.ProductScreen> {
             ProductDetailsScreen()
+        }
+        composable<Router.BestBuy.CartScreen> {
+            CartScreen()
         }
     }
 }
