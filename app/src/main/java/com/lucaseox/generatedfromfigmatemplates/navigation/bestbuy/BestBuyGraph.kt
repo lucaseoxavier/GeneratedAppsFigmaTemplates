@@ -1,4 +1,4 @@
-package com.lucaseox.generatedfromfigmatemplates.navigation
+package com.lucaseox.generatedfromfigmatemplates.navigation.bestbuy
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
@@ -9,6 +9,8 @@ import com.lucaseox.generatedfromfigmatemplates.bestbuy.BestBuyHome
 import com.lucaseox.generatedfromfigmatemplates.bestbuy.CartScreen
 import com.lucaseox.generatedfromfigmatemplates.bestbuy.CheckoutScreen
 import com.lucaseox.generatedfromfigmatemplates.bestbuy.ProductDetailsScreen
+import com.lucaseox.generatedfromfigmatemplates.navigation.Router
+import com.lucaseox.generatedfromfigmatemplates.navigation.bestBuyMenuButtons
 
 fun NavGraphBuilder.bestBuyGraph(navController: NavHostController) {
     navigation<Router.BestBuy.Route>(startDestination = Router.BestBuy.MenuScreen) {
