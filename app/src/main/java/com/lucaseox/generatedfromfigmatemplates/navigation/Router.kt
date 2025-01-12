@@ -154,12 +154,20 @@ sealed class Router {
     sealed class ToDo(val name: String) : Router() {
         @Serializable data object Route : ToDo("ToDo Route")
         @Serializable data object MenuScreen : ToDo("ToDo Menu")
+        @Serializable data object StartScreen : ToDo("Start Screen")
+        @Serializable data object RegisterScreen : ToDo("Register Screen")
+        @Serializable data object LoginScreen : ToDo("Login Screen")
+        @Serializable data object ToDoScreen : ToDo("ToDo Screen")
     }
 
     @Serializable
     sealed class AccessibleToDo(val name: String) : Router() {
         @Serializable data object Route : AccessibleToDo("Accessible ToDo Route")
         @Serializable data object MenuScreen : AccessibleToDo("Accessible ToDo Menu")
+        @Serializable data object StartScreen : AccessibleToDo("Start Screen")
+        @Serializable data object RegisterScreen : AccessibleToDo("Register Screen")
+        @Serializable data object LoginScreen : AccessibleToDo("Login Screen")
+        @Serializable data object ToDoScreen : AccessibleToDo("ToDo Screen")
     }
 
     @Serializable

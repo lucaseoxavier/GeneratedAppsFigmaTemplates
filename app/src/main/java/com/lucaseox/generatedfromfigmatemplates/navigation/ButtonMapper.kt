@@ -138,3 +138,17 @@ val accessibleRSPCAMenuButtons = listOf(
     Router.AccessibleRSPCA.WalkScreen.name to             Router.AccessibleRSPCA.WalkScreen,
     Router.AccessibleRSPCA.WalkRecordScreen.name to       Router.AccessibleRSPCA.WalkRecordScreen
 )
+
+val toDoMenuButtons = listOf(
+    Router.ToDo.StartScreen.name to         Router.ToDo.StartScreen,
+    Router.ToDo.RegisterScreen.name to      Router.ToDo.RegisterScreen,
+    Router.ToDo.LoginScreen.name to         Router.ToDo.LoginScreen,
+    Router.ToDo.ToDoScreen.name to          Router.ToDo.ToDoScreen
+)
+
+val accessibleToDoMenuButtons = listOf(
+    Router.AccessibleToDo.StartScreen.name to         Router.AccessibleToDo.StartScreen,
+    Router.AccessibleToDo.RegisterScreen.name to      Router.AccessibleToDo.RegisterScreen,
+    Router.AccessibleToDo.LoginScreen.name to         Router.AccessibleToDo.LoginScreen,
+    Router.AccessibleToDo.ToDoScreen.name to          Router.AccessibleToDo.ToDoScreen
+)

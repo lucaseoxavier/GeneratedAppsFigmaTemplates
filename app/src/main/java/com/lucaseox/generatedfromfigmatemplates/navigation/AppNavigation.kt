@@ -13,6 +13,8 @@ import com.lucaseox.generatedfromfigmatemplates.navigation.bestbuy.accessibleBes
 import com.lucaseox.generatedfromfigmatemplates.navigation.bestbuy.bestBuyGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.rspca.accessibleRspcaGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.rspca.rspcaGraph
+import com.lucaseox.generatedfromfigmatemplates.navigation.todo.accessibleToDoGraph
+import com.lucaseox.generatedfromfigmatemplates.navigation.todo.toDoGraph
 
 @Composable
 fun AppNavigation(
@@ -37,5 +39,8 @@ fun AppNavigation(
 
         rspcaGraph(navController)
         accessibleRspcaGraph(navController)
+
+        toDoGraph(navController)
+        accessibleToDoGraph(navController)
     }
 }
