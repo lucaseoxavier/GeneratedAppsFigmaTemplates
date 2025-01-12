@@ -152,3 +152,13 @@ val accessibleToDoMenuButtons = listOf(
     Router.AccessibleToDo.LoginScreen.name to         Router.AccessibleToDo.LoginScreen,
     Router.AccessibleToDo.ToDoScreen.name to          Router.AccessibleToDo.ToDoScreen
 )
+
+val musicPrototypeMenuButtons = listOf(
+    Router.MusicPrototype.HomeScreen.name to        Router.MusicPrototype.HomeScreen,
+    Router.MusicPrototype.PlayerScreen.name to      Router.MusicPrototype.PlayerScreen
+)
+
+val accessibleMusicPrototypeMenuButtons = listOf(
+    Router.AccessibleMusicPrototype.HomeScreen.name to        Router.AccessibleMusicPrototype.HomeScreen,
+    Router.AccessibleMusicPrototype.PlayerScreen.name to      Router.AccessibleMusicPrototype.PlayerScreen
+)

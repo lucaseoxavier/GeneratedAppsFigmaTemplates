@@ -174,12 +174,16 @@ sealed class Router {
     sealed class MusicPrototype (val name: String) : Router() {
         @Serializable data object Route : MusicPrototype("Music Prototype Route")
         @Serializable data object MenuScreen : MusicPrototype("Music Prototype Menu")
+        @Serializable data object HomeScreen : MusicPrototype("Home Screen")
+        @Serializable data object PlayerScreen : MusicPrototype("Player Screen")
     }
 
     @Serializable
     sealed class AccessibleMusicPrototype(val name: String) : Router() {
         @Serializable data object Route : AccessibleMusicPrototype("Accessible Music Prototype Route")
         @Serializable data object MenuScreen : AccessibleMusicPrototype("Accessible Music Prototype Menu")
+        @Serializable data object HomeScreen : AccessibleMusicPrototype("Home Screen")
+        @Serializable data object PlayerScreen : AccessibleMusicPrototype("Player Screen")
     }
 
     @Serializable

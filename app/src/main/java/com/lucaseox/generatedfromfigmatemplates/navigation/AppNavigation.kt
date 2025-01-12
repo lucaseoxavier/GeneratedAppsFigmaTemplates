@@ -11,6 +11,8 @@ import com.lucaseox.generatedfromfigmatemplates.navigation.bca.accessibleBcaGrap
 import com.lucaseox.generatedfromfigmatemplates.navigation.bca.bcaGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.bestbuy.accessibleBestBuyGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.bestbuy.bestBuyGraph
+import com.lucaseox.generatedfromfigmatemplates.navigation.musicprototype.accessibleMusicPrototypeGraph
+import com.lucaseox.generatedfromfigmatemplates.navigation.musicprototype.musicPrototypeGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.rspca.accessibleRspcaGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.rspca.rspcaGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.todo.accessibleToDoGraph
@@ -42,5 +44,8 @@ fun AppNavigation(
 
         toDoGraph(navController)
         accessibleToDoGraph(navController)
+
+        musicPrototypeGraph(navController)
+        accessibleMusicPrototypeGraph(navController)
     }
 }
