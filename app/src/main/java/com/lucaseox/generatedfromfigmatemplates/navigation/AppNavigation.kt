@@ -13,6 +13,8 @@ import com.lucaseox.generatedfromfigmatemplates.navigation.bestbuy.accessibleBes
 import com.lucaseox.generatedfromfigmatemplates.navigation.bestbuy.bestBuyGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.foodordering.accessibleFoodOrderingGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.foodordering.foodOrderingGraph
+import com.lucaseox.generatedfromfigmatemplates.navigation.kapuhamusic.accessibleKapuhaMusicGraph
+import com.lucaseox.generatedfromfigmatemplates.navigation.kapuhamusic.kapuhaMusicGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.musicprototype.accessibleMusicPrototypeGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.musicprototype.musicPrototypeGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.rspca.accessibleRspcaGraph
@@ -52,5 +54,8 @@ fun AppNavigation(
 
         foodOrderingGraph(navController)
         accessibleFoodOrderingGraph(navController)
+
+        kapuhaMusicGraph(navController)
+        accessibleKapuhaMusicGraph(navController)
     }
 }

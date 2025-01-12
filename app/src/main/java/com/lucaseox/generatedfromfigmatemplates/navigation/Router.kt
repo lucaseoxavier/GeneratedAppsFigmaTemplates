@@ -210,11 +210,15 @@ sealed class Router {
     sealed class KapuhaMusic (val name: String) : Router() {
         @Serializable data object Route : KapuhaMusic("Kapuha Music Route")
         @Serializable data object MenuScreen : KapuhaMusic("Kapuha Music Menu")
+        @Serializable data object StartScreen : KapuhaMusic("Start Screen")
+        @Serializable data object HomeScreen : KapuhaMusic("Home Screen")
     }
 
     @Serializable
     sealed class AccessibleKapuhaMusic(val name: String) : Router() {
         @Serializable data object Route : AccessibleKapuhaMusic("Accessible Kapuha Music Route")
         @Serializable data object MenuScreen : AccessibleKapuhaMusic("Accessible Kapuha Music Menu")
+        @Serializable data object StartScreen : AccessibleKapuhaMusic("Start Screen")
+        @Serializable data object HomeScreen : AccessibleKapuhaMusic("Home Screen")
     }
 }

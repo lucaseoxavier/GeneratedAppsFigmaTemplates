@@ -176,3 +176,13 @@ val accessibleFoodOrderingMenuButtons = listOf(
     Router.AccessibleFoodOrdering.CartScreen.name to  Router.AccessibleFoodOrdering.CartScreen,
     Router.AccessibleFoodOrdering.RateScreen.name to  Router.AccessibleFoodOrdering.RateScreen
 )
+
+val kapuhaMusicMenuButtons = listOf(
+    Router.KapuhaMusic.StartScreen.name to  Router.KapuhaMusic.StartScreen,
+    Router.KapuhaMusic.HomeScreen.name to   Router.KapuhaMusic.HomeScreen
+)
+
+val accessibleKapuhaMusicMenuButtons = listOf(
+    Router.AccessibleKapuhaMusic.StartScreen.name to  Router.AccessibleKapuhaMusic.StartScreen,
+    Router.AccessibleKapuhaMusic.HomeScreen.name to   Router.AccessibleKapuhaMusic.HomeScreen
+)
