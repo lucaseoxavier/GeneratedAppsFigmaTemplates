@@ -162,3 +162,17 @@ val accessibleMusicPrototypeMenuButtons = listOf(
     Router.AccessibleMusicPrototype.HomeScreen.name to        Router.AccessibleMusicPrototype.HomeScreen,
     Router.AccessibleMusicPrototype.PlayerScreen.name to      Router.AccessibleMusicPrototype.PlayerScreen
 )
+
+val foodOrderingMenuButtons = listOf(
+    Router.FoodOrdering.HomeScreen.name to  Router.FoodOrdering.HomeScreen,
+    Router.FoodOrdering.OrderScreen.name to Router.FoodOrdering.OrderScreen,
+    Router.FoodOrdering.CartScreen.name to  Router.FoodOrdering.CartScreen,
+    Router.FoodOrdering.RateScreen.name to  Router.FoodOrdering.RateScreen
+)
+
+val accessibleFoodOrderingMenuButtons = listOf(
+    Router.AccessibleFoodOrdering.HomeScreen.name to  Router.AccessibleFoodOrdering.HomeScreen,
+    Router.AccessibleFoodOrdering.OrderScreen.name to Router.AccessibleFoodOrdering.OrderScreen,
+    Router.AccessibleFoodOrdering.CartScreen.name to  Router.AccessibleFoodOrdering.CartScreen,
+    Router.AccessibleFoodOrdering.RateScreen.name to  Router.AccessibleFoodOrdering.RateScreen
+)

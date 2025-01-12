@@ -190,12 +190,20 @@ sealed class Router {
     sealed class FoodOrdering (val name: String) : Router() {
         @Serializable data object Route : FoodOrdering("Food Ordering Route")
         @Serializable data object MenuScreen : FoodOrdering("Food Ordering Menu Screen")
+        @Serializable data object HomeScreen : FoodOrdering("Home Screen")
+        @Serializable data object OrderScreen : FoodOrdering("Order Screen")
+        @Serializable data object CartScreen : FoodOrdering("Cart Screen")
+        @Serializable data object RateScreen : FoodOrdering("Rate Screen")
     }
 
     @Serializable
     sealed class AccessibleFoodOrdering(val name: String) : Router() {
         @Serializable data object Route : AccessibleFoodOrdering("Accessible Food Ordering Route")
         @Serializable data object MenuScreen : AccessibleFoodOrdering("Accessible Food Ordering Menu")
+        @Serializable data object HomeScreen : AccessibleFoodOrdering("Home Screen")
+        @Serializable data object OrderScreen : AccessibleFoodOrdering("Order Screen")
+        @Serializable data object CartScreen : AccessibleFoodOrdering("Cart Screen")
+        @Serializable data object RateScreen : AccessibleFoodOrdering("Rate Screen")
     }
 
     @Serializable

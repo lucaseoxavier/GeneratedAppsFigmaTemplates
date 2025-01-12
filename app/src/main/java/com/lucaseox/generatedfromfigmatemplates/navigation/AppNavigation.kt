@@ -11,6 +11,8 @@ import com.lucaseox.generatedfromfigmatemplates.navigation.bca.accessibleBcaGrap
 import com.lucaseox.generatedfromfigmatemplates.navigation.bca.bcaGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.bestbuy.accessibleBestBuyGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.bestbuy.bestBuyGraph
+import com.lucaseox.generatedfromfigmatemplates.navigation.foodordering.accessibleFoodOrderingGraph
+import com.lucaseox.generatedfromfigmatemplates.navigation.foodordering.foodOrderingGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.musicprototype.accessibleMusicPrototypeGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.musicprototype.musicPrototypeGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.rspca.accessibleRspcaGraph
@@ -47,5 +49,8 @@ fun AppNavigation(
 
         musicPrototypeGraph(navController)
         accessibleMusicPrototypeGraph(navController)
+
+        foodOrderingGraph(navController)
+        accessibleFoodOrderingGraph(navController)
     }
 }
