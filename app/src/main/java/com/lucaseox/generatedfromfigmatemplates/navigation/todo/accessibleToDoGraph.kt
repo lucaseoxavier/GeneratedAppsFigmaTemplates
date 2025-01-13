@@ -13,5 +13,9 @@ fun NavGraphBuilder.accessibleToDoGraph(navController: NavHostController) {
         composable<Router.AccessibleToDo.MenuScreen> {
             GridScreen(navController, accessibleToDoMenuButtons)
         }
+        composable<Router.AccessibleToDo.StartScreen> {}
+        composable<Router.AccessibleToDo.RegisterScreen> {}
+        composable<Router.AccessibleToDo.LoginScreen> {}
+        composable<Router.AccessibleToDo.ToDoScreen> {}
     }
 }

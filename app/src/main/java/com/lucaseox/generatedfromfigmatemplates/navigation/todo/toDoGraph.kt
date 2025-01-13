@@ -12,6 +12,10 @@ fun NavGraphBuilder.toDoGraph(navController: NavHostController) {
     navigation<Router.ToDo.Route>(startDestination = Router.ToDo.MenuScreen) {
         composable<Router.ToDo.MenuScreen> {
             GridScreen(navController, toDoMenuButtons)
+            composable<Router.ToDo.StartScreen> {}
+            composable<Router.ToDo.RegisterScreen> {}
+            composable<Router.ToDo.LoginScreen> {}
+            composable<Router.ToDo.ToDoScreen> {}
         }
     }
 }
