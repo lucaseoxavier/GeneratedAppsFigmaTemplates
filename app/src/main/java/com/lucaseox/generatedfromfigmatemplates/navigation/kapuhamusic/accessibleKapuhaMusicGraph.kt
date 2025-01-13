@@ -13,5 +13,7 @@ fun NavGraphBuilder.accessibleKapuhaMusicGraph(navController: NavHostController)
         composable<Router.AccessibleKapuhaMusic.MenuScreen> {
             GridScreen(navController, accessibleKapuhaMusicMenuButtons)
         }
+        composable<Router.AccessibleKapuhaMusic.StartScreen> {}
+        composable<Router.AccessibleKapuhaMusic.HomeScreen> {}
     }
 }
