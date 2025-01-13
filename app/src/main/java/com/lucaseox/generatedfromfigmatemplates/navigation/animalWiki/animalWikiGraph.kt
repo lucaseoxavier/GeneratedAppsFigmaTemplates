@@ -13,5 +13,9 @@ fun NavGraphBuilder.animalWikiGraph(navController: NavHostController) {
         composable<Router.AnimalWiki.MenuScreen> {
             GridScreen(navController, animalWikiMenuButtons)
         }
+        composable<Router.AnimalWiki.SplashScreen> {}
+        composable<Router.AnimalWiki.LoginScreen> {}
+        composable<Router.AnimalWiki.DashboardScreen> {}
+        composable<Router.AnimalWiki.AnimalScreen> {}
     }
 }
