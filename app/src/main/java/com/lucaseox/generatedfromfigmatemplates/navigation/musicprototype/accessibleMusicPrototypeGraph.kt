@@ -13,5 +13,7 @@ fun NavGraphBuilder.accessibleMusicPrototypeGraph(navController: NavHostControll
         composable<Router.AccessibleMusicPrototype.MenuScreen> {
             GridScreen(navController, accessibleMusicPrototypeMenuButtons)
         }
+        composable<Router.AccessibleMusicPrototype.HomeScreen> {}
+        composable<Router.AccessibleMusicPrototype.PlayerScreen> {}
     }
 }
