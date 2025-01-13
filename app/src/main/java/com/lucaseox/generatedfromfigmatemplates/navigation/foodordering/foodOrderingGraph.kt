@@ -13,5 +13,9 @@ fun NavGraphBuilder.foodOrderingGraph(navController: NavHostController) {
         composable<Router.FoodOrdering.MenuScreen> {
             GridScreen(navController, foodOrderingMenuButtons)
         }
+        composable<Router.FoodOrdering.HomeScreen> {}
+        composable<Router.FoodOrdering.OrderScreen> {}
+        composable<Router.FoodOrdering.CartScreen> {}
+        composable<Router.FoodOrdering.RateScreen> {}
     }
 }

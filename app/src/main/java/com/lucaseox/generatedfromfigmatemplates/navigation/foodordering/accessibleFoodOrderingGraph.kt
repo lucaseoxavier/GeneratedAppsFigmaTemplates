@@ -13,5 +13,9 @@ fun NavGraphBuilder.accessibleFoodOrderingGraph(navController: NavHostController
         composable<Router.AccessibleFoodOrdering.MenuScreen> {
             GridScreen(navController, accessibleFoodOrderingMenuButtons)
         }
+        composable<Router.AccessibleFoodOrdering.HomeScreen> {}
+        composable<Router.AccessibleFoodOrdering.OrderScreen> {}
+        composable<Router.AccessibleFoodOrdering.CartScreen> {}
+        composable<Router.AccessibleFoodOrdering.RateScreen> {}
     }
 }
