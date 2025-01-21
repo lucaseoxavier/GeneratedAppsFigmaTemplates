@@ -5,8 +5,8 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.lucaseox.generatedfromfigmatemplates.GridScreen
-import com.lucaseox.generatedfromfigmatemplates.navigation.animalWiki.accessibleAnimalWikiGraph
-import com.lucaseox.generatedfromfigmatemplates.navigation.animalWiki.animalWikiGraph
+import com.lucaseox.generatedfromfigmatemplates.navigation.animalwiki.accessibleAnimalWikiGraph
+import com.lucaseox.generatedfromfigmatemplates.navigation.animalwiki.animalWikiGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.bca.accessibleBcaGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.bca.bcaGraph
 import com.lucaseox.generatedfromfigmatemplates.navigation.bestbuy.accessibleBestBuyGraph
