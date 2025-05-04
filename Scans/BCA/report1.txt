@@ -1,0 +1,14 @@
+The following is a list of opportunities to improve the accessibility of GeneratedAppsFigmaTemplates. Each item corresponds to an outlined area on the attached screenshot.
+
+Item label
+[60,1015][660,1053]
+This item may not have a label readable by screen readers.
+
+Item label
+[60,1179][660,1288]
+This item may not have a label readable by screen readers.
+
+Item label
+[60,1408][660,1446]
+This item may not have a label readable by screen readers.
+

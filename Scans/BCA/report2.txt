@@ -1,0 +1,40 @@
+The following is a list of opportunities to improve the accessibility of GeneratedAppsFigmaTemplates. Each item corresponds to an outlined area on the attached screenshot.
+
+Item label
+[60,0][660,61]
+This item may not have a label readable by screen readers.
+
+Item label
+[60,181][660,219]
+This item may not have a label readable by screen readers.
+
+Item label
+[60,345][660,454]
+This item may not have a label readable by screen readers.
+
+Item label
+[60,574][660,612]
+This item may not have a label readable by screen readers.
+
+Item label
+[60,738][660,847]
+This item may not have a label readable by screen readers.
+
+Item label
+[60,967][660,1005]
+This item may not have a label readable by screen readers.
+
+Item label
+[60,1131][660,1240]
+This item may not have a label readable by screen readers.
+
+Item descriptions
+[533,245][660,345]
+Multiple items have the same description.
+This non-clickable item's speakable text: "Min. 25.000.000" is identical to that of 1 other item(s).
+
+Item descriptions
+[60,245][138,345]
+Multiple items have the same description.
+This non-clickable item's speakable text: "Min. 10.000" is identical to that of 2 other item(s).
+
