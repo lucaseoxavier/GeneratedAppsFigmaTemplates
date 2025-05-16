@@ -189,7 +189,7 @@ sealed class Router {
     @Serializable
     sealed class FoodOrdering (val name: String) : Router() {
         @Serializable data object Route : FoodOrdering("Food Ordering Route")
-        @Serializable data object MenuScreen : FoodOrdering("Food Ordering Menu Screen")
+        @Serializable data object MenuScreen : FoodOrdering("Food Ordering Menu")
         @Serializable data object HomeScreen : FoodOrdering("Home Screen")
         @Serializable data object OrderScreen : FoodOrdering("Order Screen")
         @Serializable data object CartScreen : FoodOrdering("Cart Screen")
