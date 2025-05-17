@@ -4,6 +4,8 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
+import com.lucaseox.generatedappsfigmatemplates.generatedscreens.kapuhamusic.HomeScreen
+import com.lucaseox.generatedappsfigmatemplates.generatedscreens.kapuhamusic.KapuhaIntroScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
 import com.lucaseox.generatedappsfigmatemplates.navigation.kapuhaMusicMenuButtons
@@ -13,7 +15,11 @@ fun NavGraphBuilder.kapuhaMusicGraph(navController: NavHostController) {
         composable<Router.KapuhaMusic.MenuScreen> {
             GridScreen(navController, kapuhaMusicMenuButtons)
         }
-        composable<Router.KapuhaMusic.StartScreen> {}
-        composable<Router.KapuhaMusic.HomeScreen> {}
+        composable<Router.KapuhaMusic.StartScreen> {
+            KapuhaIntroScreen()
+        }
+        composable<Router.KapuhaMusic.HomeScreen> {
+            HomeScreen()
+        }
     }
 }
