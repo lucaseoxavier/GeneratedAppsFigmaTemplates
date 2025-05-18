@@ -11,10 +11,10 @@ val mainAppMenuButtons = listOf(
     Router.AccessibleFoodOrdering.MenuScreen.name to    Router.AccessibleFoodOrdering.Route,
     Router.KapuhaMusic.MenuScreen.name to               Router.KapuhaMusic.Route,
     Router.AccessibleKapuhaMusic.MenuScreen.name to     Router.AccessibleKapuhaMusic.Route,
-    Router.RSPCA.MenuScreen.name to                     Router.RSPCA.Route,
-    Router.AccessibleRSPCA.MenuScreen.name to           Router.AccessibleRSPCA.Route,
     Router.MusicPrototype.MenuScreen.name to            Router.MusicPrototype.Route,
     Router.AccessibleMusicPrototype.MenuScreen.name to  Router.AccessibleMusicPrototype.Route,
+    Router.RSPCA.MenuScreen.name to                     Router.RSPCA.Route,
+    Router.AccessibleRSPCA.MenuScreen.name to           Router.AccessibleRSPCA.Route,
     Router.ToDo.MenuScreen.name to                      Router.ToDo.Route,
     Router.AccessibleToDo.MenuScreen.name to            Router.AccessibleToDo.Route
 )
