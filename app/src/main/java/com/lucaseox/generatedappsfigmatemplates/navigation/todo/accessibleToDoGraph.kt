@@ -4,10 +4,10 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
-import com.lucaseox.generatedappsfigmatemplates.generatedscreens.accessibletodo.LoginScreen
-import com.lucaseox.generatedappsfigmatemplates.generatedscreens.accessibletodo.OnboardingScreen
-import com.lucaseox.generatedappsfigmatemplates.generatedscreens.accessibletodo.RegisterScreen
-import com.lucaseox.generatedappsfigmatemplates.generatedscreens.accessibletodo.TaskHomeScreen
+import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.refactoredtodo.LoginScreen
+import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.refactoredtodo.OnboardingScreen
+import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.refactoredtodo.RegisterScreen
+import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.refactoredtodo.TaskHomeScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
 import com.lucaseox.generatedappsfigmatemplates.navigation.accessibleToDoMenuButtons
