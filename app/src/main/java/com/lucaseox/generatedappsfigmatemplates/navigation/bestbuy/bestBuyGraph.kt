@@ -4,10 +4,10 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
-import com.lucaseox.generatedappsfigmatemplates.generatedscreens.bestbuy.CartScreen
-import com.lucaseox.generatedappsfigmatemplates.generatedscreens.bestbuy.CheckoutScreen
-import com.lucaseox.generatedappsfigmatemplates.generatedscreens.bestbuy.HomeScreen
-import com.lucaseox.generatedappsfigmatemplates.generatedscreens.bestbuy.ProductDetailScreen
+import com.lucaseox.generatedappsfigmatemplates.generatedscreens.initial.v1.bestbuy.CartScreen
+import com.lucaseox.generatedappsfigmatemplates.generatedscreens.initial.v1.bestbuy.CheckoutScreen
+import com.lucaseox.generatedappsfigmatemplates.generatedscreens.initial.v1.bestbuy.HomeScreen
+import com.lucaseox.generatedappsfigmatemplates.generatedscreens.initial.v1.bestbuy.ProductDetailScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
 import com.lucaseox.generatedappsfigmatemplates.navigation.bestBuyMenuButtons
