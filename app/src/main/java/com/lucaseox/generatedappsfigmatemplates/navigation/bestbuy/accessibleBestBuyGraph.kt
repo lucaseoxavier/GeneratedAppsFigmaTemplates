@@ -10,23 +10,23 @@ import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.r
 import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.refactoredbestbuy.ProductDetailScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
-import com.lucaseox.generatedappsfigmatemplates.navigation.accessibleBestBuyMenuButtons
+import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredBestBuyMenuButtons
 
 fun NavGraphBuilder.accessibleBestBuyGraph(navController: NavHostController) {
-    navigation<Router.AccessibleBestBuy.Route>(startDestination = Router.AccessibleBestBuy.MenuScreen) {
-        composable<Router.AccessibleBestBuy.MenuScreen> {
-            GridScreen(navController, accessibleBestBuyMenuButtons)
+    navigation<Router.RefactoredBestBuy.Route>(startDestination = Router.RefactoredBestBuy.MenuScreen) {
+        composable<Router.RefactoredBestBuy.MenuScreen> {
+            GridScreen(navController, refactoredBestBuyMenuButtons)
         }
-        composable<Router.AccessibleBestBuy.HomeScreen> {
+        composable<Router.RefactoredBestBuy.HomeScreen> {
             HomeScreen()
         }
-        composable<Router.AccessibleBestBuy.ProductScreen> {
+        composable<Router.RefactoredBestBuy.ProductScreen> {
             ProductDetailScreen()
         }
-        composable<Router.AccessibleBestBuy.CartScreen> {
+        composable<Router.RefactoredBestBuy.CartScreen> {
             CartScreen()
         }
-        composable<Router.AccessibleBestBuy.CheckoutScreen> {
+        composable<Router.RefactoredBestBuy.CheckoutScreen> {
             CheckoutScreen()
         }
     }

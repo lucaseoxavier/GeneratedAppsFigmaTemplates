@@ -10,23 +10,23 @@ import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.r
 import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.refactoredfoodordering.RateServiceScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
-import com.lucaseox.generatedappsfigmatemplates.navigation.accessibleFoodOrderingMenuButtons
+import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredFoodOrderingMenuButtons
 
 fun NavGraphBuilder.accessibleFoodOrderingGraph(navController: NavHostController) {
-    navigation<Router.AccessibleFoodOrdering.Route>(startDestination = Router.AccessibleFoodOrdering.MenuScreen) {
-        composable<Router.AccessibleFoodOrdering.MenuScreen> {
-            GridScreen(navController, accessibleFoodOrderingMenuButtons)
+    navigation<Router.RefactoredFoodOrdering.Route>(startDestination = Router.RefactoredFoodOrdering.MenuScreen) {
+        composable<Router.RefactoredFoodOrdering.MenuScreen> {
+            GridScreen(navController, refactoredFoodOrderingMenuButtons)
         }
-        composable<Router.AccessibleFoodOrdering.HomeScreen> {
+        composable<Router.RefactoredFoodOrdering.HomeScreen> {
             HomeScreen()
         }
-        composable<Router.AccessibleFoodOrdering.OrderScreen> {
+        composable<Router.RefactoredFoodOrdering.OrderScreen> {
             AccessibleBurgerDetailScreen()
         }
-        composable<Router.AccessibleFoodOrdering.CartScreen> {
+        composable<Router.RefactoredFoodOrdering.CartScreen> {
             CartScreen()
         }
-        composable<Router.AccessibleFoodOrdering.RateScreen> {
+        composable<Router.RefactoredFoodOrdering.RateScreen> {
             RateServiceScreen()
         }
     }

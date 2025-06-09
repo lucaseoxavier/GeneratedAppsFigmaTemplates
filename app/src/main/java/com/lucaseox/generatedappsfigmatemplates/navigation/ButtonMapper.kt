@@ -2,21 +2,21 @@ package com.lucaseox.generatedappsfigmatemplates.navigation
 
 val mainAppMenuButtons = listOf(
     Router.AnimalWiki.MenuScreen.name to                Router.AnimalWiki.Route,
-    Router.AccessibleAnimalWiki.MenuScreen.name to      Router.AccessibleAnimalWiki.Route,
+    Router.RefactoredAnimalWiki.MenuScreen.name to      Router.RefactoredAnimalWiki.Route,
     Router.BCA.MenuScreen.name to                       Router.BCA.Route,
-    Router.AccessibleBCA.MenuScreen.name to             Router.AccessibleBCA.Route,
+    Router.RefactoredBCA.MenuScreen.name to             Router.RefactoredBCA.Route,
     Router.BestBuy.MenuScreen.name to                   Router.BestBuy.Route,
-    Router.AccessibleBestBuy.MenuScreen.name to         Router.AccessibleBestBuy.Route,
+    Router.RefactoredBestBuy.MenuScreen.name to         Router.RefactoredBestBuy.Route,
     Router.FoodOrdering.MenuScreen.name to              Router.FoodOrdering.Route,
-    Router.AccessibleFoodOrdering.MenuScreen.name to    Router.AccessibleFoodOrdering.Route,
+    Router.RefactoredFoodOrdering.MenuScreen.name to    Router.RefactoredFoodOrdering.Route,
     Router.KapuhaMusic.MenuScreen.name to               Router.KapuhaMusic.Route,
-    Router.AccessibleKapuhaMusic.MenuScreen.name to     Router.AccessibleKapuhaMusic.Route,
+    Router.RefactoredKapuhaMusic.MenuScreen.name to     Router.RefactoredKapuhaMusic.Route,
     Router.MusicPrototype.MenuScreen.name to            Router.MusicPrototype.Route,
-    Router.AccessibleMusicPrototype.MenuScreen.name to  Router.AccessibleMusicPrototype.Route,
+    Router.RefactoredMusicPrototype.MenuScreen.name to  Router.RefactoredMusicPrototype.Route,
     Router.RSPCA.MenuScreen.name to                     Router.RSPCA.Route,
-    Router.AccessibleRSPCA.MenuScreen.name to           Router.AccessibleRSPCA.Route,
+    Router.RefactoredRSPCA.MenuScreen.name to           Router.RefactoredRSPCA.Route,
     Router.ToDo.MenuScreen.name to                      Router.ToDo.Route,
-    Router.AccessibleToDo.MenuScreen.name to            Router.AccessibleToDo.Route
+    Router.RefactoredToDo.MenuScreen.name to            Router.RefactoredToDo.Route
 )
 
 val bestBuyMenuButtons = listOf(
@@ -26,11 +26,11 @@ val bestBuyMenuButtons = listOf(
     Router.BestBuy.CheckoutScreen.name to   Router.BestBuy.CheckoutScreen
 )
 
-val accessibleBestBuyMenuButtons = listOf(
-    Router.AccessibleBestBuy.HomeScreen.name to     Router.AccessibleBestBuy.HomeScreen,
-    Router.AccessibleBestBuy.ProductScreen.name to  Router.AccessibleBestBuy.ProductScreen,
-    Router.AccessibleBestBuy.CartScreen.name to     Router.AccessibleBestBuy.CartScreen,
-    Router.AccessibleBestBuy.CheckoutScreen.name to Router.AccessibleBestBuy.CheckoutScreen
+val refactoredBestBuyMenuButtons = listOf(
+    Router.RefactoredBestBuy.HomeScreen.name to     Router.RefactoredBestBuy.HomeScreen,
+    Router.RefactoredBestBuy.ProductScreen.name to  Router.RefactoredBestBuy.ProductScreen,
+    Router.RefactoredBestBuy.CartScreen.name to     Router.RefactoredBestBuy.CartScreen,
+    Router.RefactoredBestBuy.CheckoutScreen.name to Router.RefactoredBestBuy.CheckoutScreen
 )
 
 val bcaMenuButtons = listOf(
@@ -57,28 +57,28 @@ val bcaMenuButtons = listOf(
     Router.BCA.BlockScreen.name to              Router.BCA.BlockScreen
 )
 
-val accessibleBcaMenuButtons = listOf(
-    Router.AccessibleBCA.LoginScreen.name to              Router.AccessibleBCA.LoginScreen,
-    Router.AccessibleBCA.HomeScreen.name to               Router.AccessibleBCA.HomeScreen,
-    Router.AccessibleBCA.ScanQrScreen.name to             Router.AccessibleBCA.ScanQrScreen,
-    Router.AccessibleBCA.ShowQrScreen.name to             Router.AccessibleBCA.ShowQrScreen,
-    Router.AccessibleBCA.TransactionScreen.name to        Router.AccessibleBCA.TransactionScreen,
-    Router.AccessibleBCA.FullTransactionScreen.name to    Router.AccessibleBCA.FullTransactionScreen,
-    Router.AccessibleBCA.FlazzScreen.name to              Router.AccessibleBCA.FlazzScreen,
-    Router.AccessibleBCA.FlazzBalanceScreen.name to       Router.AccessibleBCA.FlazzBalanceScreen,
-    Router.AccessibleBCA.FlazzTopUpScreen.name to         Router.AccessibleBCA.FlazzTopUpScreen,
-    Router.AccessibleBCA.FlazzCompletedScreen.name to     Router.AccessibleBCA.FlazzCompletedScreen,
-    Router.AccessibleBCA.InfoScreen.name to               Router.AccessibleBCA.InfoScreen,
-    Router.AccessibleBCA.NotificationScreen.name to       Router.AccessibleBCA.NotificationScreen,
-    Router.AccessibleBCA.MessageScreen.name to            Router.AccessibleBCA.MessageScreen,
-    Router.AccessibleBCA.ReceiverScreen.name to           Router.AccessibleBCA.ReceiverScreen,
-    Router.AccessibleBCA.AmountScreen.name to             Router.AccessibleBCA.AmountScreen,
-    Router.AccessibleBCA.TransferCompletedScreen.name to  Router.AccessibleBCA.TransferCompletedScreen,
-    Router.AccessibleBCA.NewAccountScreen.name to         Router.AccessibleBCA.NewAccountScreen,
-    Router.AccessibleBCA.ProfileScreen.name to            Router.AccessibleBCA.ProfileScreen,
-    Router.AccessibleBCA.ControlScreen.name to            Router.AccessibleBCA.ControlScreen,
-    Router.AccessibleBCA.SetLimitScreen.name to           Router.AccessibleBCA.SetLimitScreen,
-    Router.AccessibleBCA.BlockScreen.name to              Router.AccessibleBCA.BlockScreen
+val refactoredBcaMenuButtons = listOf(
+    Router.RefactoredBCA.LoginScreen.name to              Router.RefactoredBCA.LoginScreen,
+    Router.RefactoredBCA.HomeScreen.name to               Router.RefactoredBCA.HomeScreen,
+    Router.RefactoredBCA.ScanQrScreen.name to             Router.RefactoredBCA.ScanQrScreen,
+    Router.RefactoredBCA.ShowQrScreen.name to             Router.RefactoredBCA.ShowQrScreen,
+    Router.RefactoredBCA.TransactionScreen.name to        Router.RefactoredBCA.TransactionScreen,
+    Router.RefactoredBCA.FullTransactionScreen.name to    Router.RefactoredBCA.FullTransactionScreen,
+    Router.RefactoredBCA.FlazzScreen.name to              Router.RefactoredBCA.FlazzScreen,
+    Router.RefactoredBCA.FlazzBalanceScreen.name to       Router.RefactoredBCA.FlazzBalanceScreen,
+    Router.RefactoredBCA.FlazzTopUpScreen.name to         Router.RefactoredBCA.FlazzTopUpScreen,
+    Router.RefactoredBCA.FlazzCompletedScreen.name to     Router.RefactoredBCA.FlazzCompletedScreen,
+    Router.RefactoredBCA.InfoScreen.name to               Router.RefactoredBCA.InfoScreen,
+    Router.RefactoredBCA.NotificationScreen.name to       Router.RefactoredBCA.NotificationScreen,
+    Router.RefactoredBCA.MessageScreen.name to            Router.RefactoredBCA.MessageScreen,
+    Router.RefactoredBCA.ReceiverScreen.name to           Router.RefactoredBCA.ReceiverScreen,
+    Router.RefactoredBCA.AmountScreen.name to             Router.RefactoredBCA.AmountScreen,
+    Router.RefactoredBCA.TransferCompletedScreen.name to  Router.RefactoredBCA.TransferCompletedScreen,
+    Router.RefactoredBCA.NewAccountScreen.name to         Router.RefactoredBCA.NewAccountScreen,
+    Router.RefactoredBCA.ProfileScreen.name to            Router.RefactoredBCA.ProfileScreen,
+    Router.RefactoredBCA.ControlScreen.name to            Router.RefactoredBCA.ControlScreen,
+    Router.RefactoredBCA.SetLimitScreen.name to           Router.RefactoredBCA.SetLimitScreen,
+    Router.RefactoredBCA.BlockScreen.name to              Router.RefactoredBCA.BlockScreen
 )
 
 val animalWikiMenuButtons = listOf(
@@ -88,11 +88,11 @@ val animalWikiMenuButtons = listOf(
     Router.AnimalWiki.AnimalScreen.name to      Router.AnimalWiki.AnimalScreen
 )
 
-val accessibleAnimalWikiMenuButtons = listOf(
-    Router.AccessibleAnimalWiki.SplashScreen.name to      Router.AccessibleAnimalWiki.SplashScreen,
-    Router.AccessibleAnimalWiki.LoginScreen.name to       Router.AccessibleAnimalWiki.LoginScreen,
-    Router.AccessibleAnimalWiki.DashboardScreen.name to   Router.AccessibleAnimalWiki.DashboardScreen,
-    Router.AccessibleAnimalWiki.AnimalScreen.name to      Router.AccessibleAnimalWiki.AnimalScreen
+val refactoredAnimalWikiMenuButtons = listOf(
+    Router.RefactoredAnimalWiki.SplashScreen.name to      Router.RefactoredAnimalWiki.SplashScreen,
+    Router.RefactoredAnimalWiki.LoginScreen.name to       Router.RefactoredAnimalWiki.LoginScreen,
+    Router.RefactoredAnimalWiki.DashboardScreen.name to   Router.RefactoredAnimalWiki.DashboardScreen,
+    Router.RefactoredAnimalWiki.AnimalScreen.name to      Router.RefactoredAnimalWiki.AnimalScreen
 )
 
 val RSPCAMenuButtons = listOf(
@@ -117,26 +117,26 @@ val RSPCAMenuButtons = listOf(
     Router.RSPCA.WalkRecordScreen.name to       Router.RSPCA.WalkRecordScreen
 )
 
-val accessibleRSPCAMenuButtons = listOf(
-    Router.AccessibleRSPCA.StartScreen.name to            Router.AccessibleRSPCA.StartScreen,
-    Router.AccessibleRSPCA.LoginScreen.name to            Router.AccessibleRSPCA.LoginScreen,
-    Router.AccessibleRSPCA.HomeScreen.name to             Router.AccessibleRSPCA.HomeScreen,
-    Router.AccessibleRSPCA.RegisterPetScreen.name to      Router.AccessibleRSPCA.RegisterPetScreen,
-    Router.AccessibleRSPCA.DogScreen.name to              Router.AccessibleRSPCA.DogScreen,
-    Router.AccessibleRSPCA.RegisterDogScreen.name to      Router.AccessibleRSPCA.RegisterDogScreen,
-    Router.AccessibleRSPCA.AdoptionScreen.name to         Router.AccessibleRSPCA.AdoptionScreen,
-    Router.AccessibleRSPCA.AdoptionFormScreen.name to     Router.AccessibleRSPCA.AdoptionFormScreen,
-    Router.AccessibleRSPCA.ServicesScreen.name to         Router.AccessibleRSPCA.ServicesScreen,
-    Router.AccessibleRSPCA.CurrentPetsScreen.name to      Router.AccessibleRSPCA.CurrentPetsScreen,
-    Router.AccessibleRSPCA.VetScreen.name to              Router.AccessibleRSPCA.VetScreen,
-    Router.AccessibleRSPCA.GroomingScreen.name to         Router.AccessibleRSPCA.GroomingScreen,
-    Router.AccessibleRSPCA.MapScreen.name to              Router.AccessibleRSPCA.MapScreen,
-    Router.AccessibleRSPCA.PetInfoScreen.name to          Router.AccessibleRSPCA.PetInfoScreen,
-    Router.AccessibleRSPCA.DietScreen.name to             Router.AccessibleRSPCA.DietScreen,
-    Router.AccessibleRSPCA.BMIScreen.name to              Router.AccessibleRSPCA.BMIScreen,
-    Router.AccessibleRSPCA.ExerciseScreen.name to         Router.AccessibleRSPCA.ExerciseScreen,
-    Router.AccessibleRSPCA.WalkScreen.name to             Router.AccessibleRSPCA.WalkScreen,
-    Router.AccessibleRSPCA.WalkRecordScreen.name to       Router.AccessibleRSPCA.WalkRecordScreen
+val refactoredRSPCAMenuButtons = listOf(
+    Router.RefactoredRSPCA.StartScreen.name to            Router.RefactoredRSPCA.StartScreen,
+    Router.RefactoredRSPCA.LoginScreen.name to            Router.RefactoredRSPCA.LoginScreen,
+    Router.RefactoredRSPCA.HomeScreen.name to             Router.RefactoredRSPCA.HomeScreen,
+    Router.RefactoredRSPCA.RegisterPetScreen.name to      Router.RefactoredRSPCA.RegisterPetScreen,
+    Router.RefactoredRSPCA.DogScreen.name to              Router.RefactoredRSPCA.DogScreen,
+    Router.RefactoredRSPCA.RegisterDogScreen.name to      Router.RefactoredRSPCA.RegisterDogScreen,
+    Router.RefactoredRSPCA.AdoptionScreen.name to         Router.RefactoredRSPCA.AdoptionScreen,
+    Router.RefactoredRSPCA.AdoptionFormScreen.name to     Router.RefactoredRSPCA.AdoptionFormScreen,
+    Router.RefactoredRSPCA.ServicesScreen.name to         Router.RefactoredRSPCA.ServicesScreen,
+    Router.RefactoredRSPCA.CurrentPetsScreen.name to      Router.RefactoredRSPCA.CurrentPetsScreen,
+    Router.RefactoredRSPCA.VetScreen.name to              Router.RefactoredRSPCA.VetScreen,
+    Router.RefactoredRSPCA.GroomingScreen.name to         Router.RefactoredRSPCA.GroomingScreen,
+    Router.RefactoredRSPCA.MapScreen.name to              Router.RefactoredRSPCA.MapScreen,
+    Router.RefactoredRSPCA.PetInfoScreen.name to          Router.RefactoredRSPCA.PetInfoScreen,
+    Router.RefactoredRSPCA.DietScreen.name to             Router.RefactoredRSPCA.DietScreen,
+    Router.RefactoredRSPCA.BMIScreen.name to              Router.RefactoredRSPCA.BMIScreen,
+    Router.RefactoredRSPCA.ExerciseScreen.name to         Router.RefactoredRSPCA.ExerciseScreen,
+    Router.RefactoredRSPCA.WalkScreen.name to             Router.RefactoredRSPCA.WalkScreen,
+    Router.RefactoredRSPCA.WalkRecordScreen.name to       Router.RefactoredRSPCA.WalkRecordScreen
 )
 
 val toDoMenuButtons = listOf(
@@ -146,11 +146,11 @@ val toDoMenuButtons = listOf(
     Router.ToDo.ToDoScreen.name to          Router.ToDo.ToDoScreen
 )
 
-val accessibleToDoMenuButtons = listOf(
-    Router.AccessibleToDo.StartScreen.name to         Router.AccessibleToDo.StartScreen,
-    Router.AccessibleToDo.RegisterScreen.name to      Router.AccessibleToDo.RegisterScreen,
-    Router.AccessibleToDo.LoginScreen.name to         Router.AccessibleToDo.LoginScreen,
-    Router.AccessibleToDo.ToDoScreen.name to          Router.AccessibleToDo.ToDoScreen
+val refactoredToDoMenuButtons = listOf(
+    Router.RefactoredToDo.StartScreen.name to         Router.RefactoredToDo.StartScreen,
+    Router.RefactoredToDo.RegisterScreen.name to      Router.RefactoredToDo.RegisterScreen,
+    Router.RefactoredToDo.LoginScreen.name to         Router.RefactoredToDo.LoginScreen,
+    Router.RefactoredToDo.ToDoScreen.name to          Router.RefactoredToDo.ToDoScreen
 )
 
 val musicPrototypeMenuButtons = listOf(
@@ -158,9 +158,9 @@ val musicPrototypeMenuButtons = listOf(
     Router.MusicPrototype.PlayerScreen.name to      Router.MusicPrototype.PlayerScreen
 )
 
-val accessibleMusicPrototypeMenuButtons = listOf(
-    Router.AccessibleMusicPrototype.HomeScreen.name to        Router.AccessibleMusicPrototype.HomeScreen,
-    Router.AccessibleMusicPrototype.PlayerScreen.name to      Router.AccessibleMusicPrototype.PlayerScreen
+val refactoredMusicPrototypeMenuButtons = listOf(
+    Router.RefactoredMusicPrototype.HomeScreen.name to        Router.RefactoredMusicPrototype.HomeScreen,
+    Router.RefactoredMusicPrototype.PlayerScreen.name to      Router.RefactoredMusicPrototype.PlayerScreen
 )
 
 val foodOrderingMenuButtons = listOf(
@@ -170,11 +170,11 @@ val foodOrderingMenuButtons = listOf(
     Router.FoodOrdering.RateScreen.name to  Router.FoodOrdering.RateScreen
 )
 
-val accessibleFoodOrderingMenuButtons = listOf(
-    Router.AccessibleFoodOrdering.HomeScreen.name to  Router.AccessibleFoodOrdering.HomeScreen,
-    Router.AccessibleFoodOrdering.OrderScreen.name to Router.AccessibleFoodOrdering.OrderScreen,
-    Router.AccessibleFoodOrdering.CartScreen.name to  Router.AccessibleFoodOrdering.CartScreen,
-    Router.AccessibleFoodOrdering.RateScreen.name to  Router.AccessibleFoodOrdering.RateScreen
+val refactoredFoodOrderingMenuButtons = listOf(
+    Router.RefactoredFoodOrdering.HomeScreen.name to  Router.RefactoredFoodOrdering.HomeScreen,
+    Router.RefactoredFoodOrdering.OrderScreen.name to Router.RefactoredFoodOrdering.OrderScreen,
+    Router.RefactoredFoodOrdering.CartScreen.name to  Router.RefactoredFoodOrdering.CartScreen,
+    Router.RefactoredFoodOrdering.RateScreen.name to  Router.RefactoredFoodOrdering.RateScreen
 )
 
 val kapuhaMusicMenuButtons = listOf(
@@ -182,7 +182,7 @@ val kapuhaMusicMenuButtons = listOf(
     Router.KapuhaMusic.HomeScreen.name to   Router.KapuhaMusic.HomeScreen
 )
 
-val accessibleKapuhaMusicMenuButtons = listOf(
-    Router.AccessibleKapuhaMusic.StartScreen.name to  Router.AccessibleKapuhaMusic.StartScreen,
-    Router.AccessibleKapuhaMusic.HomeScreen.name to   Router.AccessibleKapuhaMusic.HomeScreen
+val refactoredKapuhaMusicMenuButtons = listOf(
+    Router.RefactoredKapuhaMusic.StartScreen.name to  Router.RefactoredKapuhaMusic.StartScreen,
+    Router.RefactoredKapuhaMusic.HomeScreen.name to   Router.RefactoredKapuhaMusic.HomeScreen
 )

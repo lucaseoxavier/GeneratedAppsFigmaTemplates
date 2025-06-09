@@ -8,17 +8,17 @@ import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.r
 import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.refactoredkapuhamusic.KapuhaIntroScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
-import com.lucaseox.generatedappsfigmatemplates.navigation.accessibleKapuhaMusicMenuButtons
+import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredKapuhaMusicMenuButtons
 
 fun NavGraphBuilder.accessibleKapuhaMusicGraph(navController: NavHostController) {
-    navigation<Router.AccessibleKapuhaMusic.Route>(startDestination = Router.AccessibleKapuhaMusic.MenuScreen) {
-        composable<Router.AccessibleKapuhaMusic.MenuScreen> {
-            GridScreen(navController, accessibleKapuhaMusicMenuButtons)
+    navigation<Router.RefactoredKapuhaMusic.Route>(startDestination = Router.RefactoredKapuhaMusic.MenuScreen) {
+        composable<Router.RefactoredKapuhaMusic.MenuScreen> {
+            GridScreen(navController, refactoredKapuhaMusicMenuButtons)
         }
-        composable<Router.AccessibleKapuhaMusic.StartScreen> {
+        composable<Router.RefactoredKapuhaMusic.StartScreen> {
             KapuhaIntroScreen()
         }
-        composable<Router.AccessibleKapuhaMusic.HomeScreen> {
+        composable<Router.RefactoredKapuhaMusic.HomeScreen> {
             HomeScreen()
         }
     }

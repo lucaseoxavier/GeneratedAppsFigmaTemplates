@@ -24,68 +24,68 @@ import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.r
 import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.refactoredrspca.WalkScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
-import com.lucaseox.generatedappsfigmatemplates.navigation.accessibleRSPCAMenuButtons
+import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredRSPCAMenuButtons
 
 fun NavGraphBuilder.accessibleRspcaGraph(navController: NavHostController) {
-    navigation<Router.AccessibleRSPCA.Route>(startDestination = Router.AccessibleRSPCA.MenuScreen) {
-        composable<Router.AccessibleRSPCA.MenuScreen> {
-            GridScreen(navController, accessibleRSPCAMenuButtons)
+    navigation<Router.RefactoredRSPCA.Route>(startDestination = Router.RefactoredRSPCA.MenuScreen) {
+        composable<Router.RefactoredRSPCA.MenuScreen> {
+            GridScreen(navController, refactoredRSPCAMenuButtons)
         }
-        composable<Router.AccessibleRSPCA.StartScreen> {
+        composable<Router.RefactoredRSPCA.StartScreen> {
             StartScreen()
         }
-        composable<Router.AccessibleRSPCA.LoginScreen> {
+        composable<Router.RefactoredRSPCA.LoginScreen> {
             LoginScreen()
         }
-        composable<Router.AccessibleRSPCA.HomeScreen> {
+        composable<Router.RefactoredRSPCA.HomeScreen> {
             HomeScreen()
         }
-        composable<Router.AccessibleRSPCA.RegisterPetScreen> {
+        composable<Router.RefactoredRSPCA.RegisterPetScreen> {
             RegisterPetScreen()   
         }
-        composable<Router.AccessibleRSPCA.DogScreen> {
+        composable<Router.RefactoredRSPCA.DogScreen> {
             DogScreen()
         }
-        composable<Router.AccessibleRSPCA.RegisterDogScreen> {
+        composable<Router.RefactoredRSPCA.RegisterDogScreen> {
             RegisterDogScreen()
         }
-        composable<Router.AccessibleRSPCA.AdoptionScreen> {
+        composable<Router.RefactoredRSPCA.AdoptionScreen> {
             AdoptionScreen()
         }
-        composable<Router.AccessibleRSPCA.AdoptionFormScreen> {
+        composable<Router.RefactoredRSPCA.AdoptionFormScreen> {
             SignUpScreen()
         }
-        composable<Router.AccessibleRSPCA.ServicesScreen> {
+        composable<Router.RefactoredRSPCA.ServicesScreen> {
             ServicesScreen()
         }
-        composable<Router.AccessibleRSPCA.CurrentPetsScreen> {
+        composable<Router.RefactoredRSPCA.CurrentPetsScreen> {
             // no accessibility errors
         }
-        composable<Router.AccessibleRSPCA.VetScreen> {
+        composable<Router.RefactoredRSPCA.VetScreen> {
             VetServicesScreen()
         }
-        composable<Router.AccessibleRSPCA.GroomingScreen> {
+        composable<Router.RefactoredRSPCA.GroomingScreen> {
             GroomingServicesScreen()
         }
-        composable<Router.AccessibleRSPCA.MapScreen> {
+        composable<Router.RefactoredRSPCA.MapScreen> {
             MapScreen()
         }
-        composable<Router.AccessibleRSPCA.PetInfoScreen> {
+        composable<Router.RefactoredRSPCA.PetInfoScreen> {
             PetInfoScreen()
         }
-        composable<Router.AccessibleRSPCA.DietScreen> {
+        composable<Router.RefactoredRSPCA.DietScreen> {
             DietScreen()
         }
-        composable<Router.AccessibleRSPCA.BMIScreen> {
+        composable<Router.RefactoredRSPCA.BMIScreen> {
             BmiCheckerScreen()
         }
-        composable<Router.AccessibleRSPCA.ExerciseScreen> {
+        composable<Router.RefactoredRSPCA.ExerciseScreen> {
             AccessibleExerciseScreen()
         }
-        composable<Router.AccessibleRSPCA.WalkScreen> {
+        composable<Router.RefactoredRSPCA.WalkScreen> {
             WalkScreen()
         }
-        composable<Router.AccessibleRSPCA.WalkRecordScreen> {
+        composable<Router.RefactoredRSPCA.WalkRecordScreen> {
             WalkRecordScreen()
         }
     }

@@ -10,23 +10,23 @@ import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.r
 import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.refactoredanimalwiki.SplashScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
-import com.lucaseox.generatedappsfigmatemplates.navigation.accessibleAnimalWikiMenuButtons
+import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredAnimalWikiMenuButtons
 
 fun NavGraphBuilder.accessibleAnimalWikiGraph(navController: NavHostController) {
-    navigation<Router.AccessibleAnimalWiki.Route>(startDestination = Router.AccessibleAnimalWiki.MenuScreen) {
-        composable<Router.AccessibleAnimalWiki.MenuScreen> {
-            GridScreen(navController, accessibleAnimalWikiMenuButtons)
+    navigation<Router.RefactoredAnimalWiki.Route>(startDestination = Router.RefactoredAnimalWiki.MenuScreen) {
+        composable<Router.RefactoredAnimalWiki.MenuScreen> {
+            GridScreen(navController, refactoredAnimalWikiMenuButtons)
         }
-        composable<Router.AccessibleAnimalWiki.SplashScreen> {
+        composable<Router.RefactoredAnimalWiki.SplashScreen> {
             SplashScreen()
         }
-        composable<Router.AccessibleAnimalWiki.LoginScreen> {
+        composable<Router.RefactoredAnimalWiki.LoginScreen> {
             AccessibleLoginScreen()
         }
-        composable<Router.AccessibleAnimalWiki.DashboardScreen> {
+        composable<Router.RefactoredAnimalWiki.DashboardScreen> {
             AnimalWikiScreen()
         }
-        composable<Router.AccessibleAnimalWiki.AnimalScreen> {
+        composable<Router.RefactoredAnimalWiki.AnimalScreen> {
             AnimalCardScreen()
         }
     }

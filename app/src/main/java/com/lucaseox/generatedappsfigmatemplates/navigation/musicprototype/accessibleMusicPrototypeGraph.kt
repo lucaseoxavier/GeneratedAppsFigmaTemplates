@@ -7,17 +7,17 @@ import androidx.navigation.compose.navigation
 import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.refactoredmusicprototype.HomeScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
-import com.lucaseox.generatedappsfigmatemplates.navigation.accessibleMusicPrototypeMenuButtons
+import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredMusicPrototypeMenuButtons
 
 fun NavGraphBuilder.accessibleMusicPrototypeGraph(navController: NavHostController) {
-    navigation<Router.AccessibleMusicPrototype.Route>(startDestination = Router.AccessibleMusicPrototype.MenuScreen) {
-        composable<Router.AccessibleMusicPrototype.MenuScreen> {
-            GridScreen(navController, accessibleMusicPrototypeMenuButtons)
+    navigation<Router.RefactoredMusicPrototype.Route>(startDestination = Router.RefactoredMusicPrototype.MenuScreen) {
+        composable<Router.RefactoredMusicPrototype.MenuScreen> {
+            GridScreen(navController, refactoredMusicPrototypeMenuButtons)
         }
-        composable<Router.AccessibleMusicPrototype.HomeScreen> {
+        composable<Router.RefactoredMusicPrototype.HomeScreen> {
             HomeScreen()
         }
-        composable<Router.AccessibleMusicPrototype.PlayerScreen> {
+        composable<Router.RefactoredMusicPrototype.PlayerScreen> {
             // no accessibility errors
         }
     }

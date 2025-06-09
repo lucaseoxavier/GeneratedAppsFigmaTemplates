@@ -26,74 +26,74 @@ import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.r
 import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.refactoredbca.TransferCompleteScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
-import com.lucaseox.generatedappsfigmatemplates.navigation.accessibleBcaMenuButtons
+import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredBcaMenuButtons
 
 fun NavGraphBuilder.accessibleBcaGraph(navController: NavHostController) {
-    navigation<Router.AccessibleBCA.Route>(startDestination = Router.AccessibleBCA.MenuScreen) {
-        composable<Router.AccessibleBCA.MenuScreen> {
-            GridScreen(navController, accessibleBcaMenuButtons)
+    navigation<Router.RefactoredBCA.Route>(startDestination = Router.RefactoredBCA.MenuScreen) {
+        composable<Router.RefactoredBCA.MenuScreen> {
+            GridScreen(navController, refactoredBcaMenuButtons)
         }
-        composable<Router.AccessibleBCA.LoginScreen> {
+        composable<Router.RefactoredBCA.LoginScreen> {
             LoginScreen()
         }
-        composable<Router.AccessibleBCA.HomeScreen> {
+        composable<Router.RefactoredBCA.HomeScreen> {
             HomeScreen()
         }
-        composable<Router.AccessibleBCA.ScanQrScreen> {
+        composable<Router.RefactoredBCA.ScanQrScreen> {
             // no accessibility errors
         }
-        composable<Router.AccessibleBCA.ShowQrScreen> {
+        composable<Router.RefactoredBCA.ShowQrScreen> {
             QRScreen()
         }
-        composable<Router.AccessibleBCA.TransactionScreen> {
+        composable<Router.RefactoredBCA.TransactionScreen> {
             TransactionScreen()
         }
-        composable<Router.AccessibleBCA.FullTransactionScreen> {
+        composable<Router.RefactoredBCA.FullTransactionScreen> {
             FullTransactionScreen()
         }
-        composable<Router.AccessibleBCA.FlazzScreen> {
+        composable<Router.RefactoredBCA.FlazzScreen> {
             FlazzNfcScreen()
         }
-        composable<Router.AccessibleBCA.FlazzBalanceScreen> {
+        composable<Router.RefactoredBCA.FlazzBalanceScreen> {
             FlazzBalanceScreen()
         }
-        composable<Router.AccessibleBCA.FlazzTopUpScreen> {
+        composable<Router.RefactoredBCA.FlazzTopUpScreen> {
             FlazzTopUpScreen()
         }
-        composable<Router.AccessibleBCA.FlazzCompletedScreen> {
+        composable<Router.RefactoredBCA.FlazzCompletedScreen> {
             TopUpCompletedScreen()
         }
-        composable<Router.AccessibleBCA.InfoScreen> {
+        composable<Router.RefactoredBCA.InfoScreen> {
             InfoScreen()
         }
-        composable<Router.AccessibleBCA.NotificationScreen> {
+        composable<Router.RefactoredBCA.NotificationScreen> {
             NotificationScreen()
         }
-        composable<Router.AccessibleBCA.MessageScreen> {
+        composable<Router.RefactoredBCA.MessageScreen> {
             MessageScreen()
         }
-        composable<Router.AccessibleBCA.ReceiverScreen> {
+        composable<Router.RefactoredBCA.ReceiverScreen> {
             ReceiverScreen()
         }
-        composable<Router.AccessibleBCA.AmountScreen> {
+        composable<Router.RefactoredBCA.AmountScreen> {
             AmountScreen()
         }
-        composable<Router.AccessibleBCA.TransferCompletedScreen> {
+        composable<Router.RefactoredBCA.TransferCompletedScreen> {
             TransferCompleteScreen()
         }
-        composable<Router.AccessibleBCA.NewAccountScreen> {
+        composable<Router.RefactoredBCA.NewAccountScreen> {
             NewAccountScreen()
         }
-        composable<Router.AccessibleBCA.ProfileScreen> {
+        composable<Router.RefactoredBCA.ProfileScreen> {
             ProfileScreen()
         }
-        composable<Router.AccessibleBCA.ControlScreen> {
+        composable<Router.RefactoredBCA.ControlScreen> {
             CardSettingsScreen()
         }
-        composable<Router.AccessibleBCA.SetLimitScreen> {
+        composable<Router.RefactoredBCA.SetLimitScreen> {
             SetLimitScreen()
         }
-        composable<Router.AccessibleBCA.BlockScreen> {
+        composable<Router.RefactoredBCA.BlockScreen> {
             CardBlockageScreen()
         }
     }

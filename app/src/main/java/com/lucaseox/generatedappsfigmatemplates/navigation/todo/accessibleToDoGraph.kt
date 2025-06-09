@@ -10,23 +10,23 @@ import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.r
 import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v1.refactoredtodo.TaskHomeScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
-import com.lucaseox.generatedappsfigmatemplates.navigation.accessibleToDoMenuButtons
+import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredToDoMenuButtons
 
 fun NavGraphBuilder.accessibleToDoGraph(navController: NavHostController) {
-    navigation<Router.AccessibleToDo.Route>(startDestination = Router.AccessibleToDo.MenuScreen) {
-        composable<Router.AccessibleToDo.MenuScreen> {
-            GridScreen(navController, accessibleToDoMenuButtons)
+    navigation<Router.RefactoredToDo.Route>(startDestination = Router.RefactoredToDo.MenuScreen) {
+        composable<Router.RefactoredToDo.MenuScreen> {
+            GridScreen(navController, refactoredToDoMenuButtons)
         }
-        composable<Router.AccessibleToDo.StartScreen> {
+        composable<Router.RefactoredToDo.StartScreen> {
             OnboardingScreen()
         }
-        composable<Router.AccessibleToDo.RegisterScreen> {
+        composable<Router.RefactoredToDo.RegisterScreen> {
             RegisterScreen()
         }
-        composable<Router.AccessibleToDo.LoginScreen> {
+        composable<Router.RefactoredToDo.LoginScreen> {
             LoginScreen()
         }
-        composable<Router.AccessibleToDo.ToDoScreen> {
+        composable<Router.RefactoredToDo.ToDoScreen> {
             TaskHomeScreen()
         }
     }
