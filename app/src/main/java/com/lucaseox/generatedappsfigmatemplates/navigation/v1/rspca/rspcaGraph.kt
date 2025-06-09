@@ -1,4 +1,4 @@
-package com.lucaseox.generatedappsfigmatemplates.navigation.rspca
+package com.lucaseox.generatedappsfigmatemplates.navigation.v1.rspca
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController

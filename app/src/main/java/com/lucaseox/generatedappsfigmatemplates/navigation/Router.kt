@@ -7,6 +7,24 @@ sealed class Router {
     data object MainAppMenu: Router()
 
     @Serializable
+    sealed class V1(val name: String) : Router() {
+        @Serializable data object Route : V1("V1 Route")
+        @Serializable data object MenuScreen : V1("V1 Menu")
+    }
+
+    @Serializable
+    sealed class V2(val name: String) : Router() {
+        @Serializable data object Route : V2("V2 Route")
+        @Serializable data object MenuScreen : V2("V2 Menu")
+    }
+
+    @Serializable
+    sealed class V3(val name: String) : Router() {
+        @Serializable data object Route : V3("V3 Route")
+        @Serializable data object MenuScreen : V3("V3 Menu")
+    }
+
+    @Serializable
     sealed class AnimalWiki(val name: String) : Router() {
         @Serializable data object Route : AnimalWiki("Animal Wiki Route")
         @Serializable data object MenuScreen : AnimalWiki("Animal Wiki Menu")

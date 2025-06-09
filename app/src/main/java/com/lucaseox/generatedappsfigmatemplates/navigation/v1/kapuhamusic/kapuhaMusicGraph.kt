@@ -1,4 +1,4 @@
-package com.lucaseox.generatedappsfigmatemplates.navigation.kapuhamusic
+package com.lucaseox.generatedappsfigmatemplates.navigation.v1.kapuhamusic
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController

@@ -1,4 +1,4 @@
-package com.lucaseox.generatedappsfigmatemplates.navigation.bca
+package com.lucaseox.generatedappsfigmatemplates.navigation.v1.bca
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController

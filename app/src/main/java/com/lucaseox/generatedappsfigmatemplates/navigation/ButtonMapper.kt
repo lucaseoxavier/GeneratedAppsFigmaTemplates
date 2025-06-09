@@ -1,6 +1,12 @@
 package com.lucaseox.generatedappsfigmatemplates.navigation
 
 val mainAppMenuButtons = listOf(
+    Router.V1.MenuScreen.name to Router.V1.Route,
+    Router.V2.MenuScreen.name to Router.V2.Route,
+    Router.V3.MenuScreen.name to Router.V3.Route
+)
+
+val v1AppMenuButtons = listOf(
     Router.AnimalWiki.MenuScreen.name to                Router.AnimalWiki.Route,
     Router.RefactoredAnimalWiki.MenuScreen.name to      Router.RefactoredAnimalWiki.Route,
     Router.BCA.MenuScreen.name to                       Router.BCA.Route,
@@ -18,6 +24,10 @@ val mainAppMenuButtons = listOf(
     Router.ToDo.MenuScreen.name to                      Router.ToDo.Route,
     Router.RefactoredToDo.MenuScreen.name to            Router.RefactoredToDo.Route
 )
+
+val v2AppMenuButtons = emptyList<Pair<String, Router>>()
+
+val v3AppMenuButtons = emptyList<Pair<String, Router>>()
 
 val bestBuyMenuButtons = listOf(
     Router.BestBuy.HomeScreen.name to       Router.BestBuy.HomeScreen,

@@ -1,4 +1,4 @@
-package com.lucaseox.generatedappsfigmatemplates.navigation.animalwiki
+package com.lucaseox.generatedappsfigmatemplates.navigation.v1.animalwiki
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController

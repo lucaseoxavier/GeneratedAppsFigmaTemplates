@@ -1,4 +1,4 @@
-package com.lucaseox.generatedappsfigmatemplates.navigation.bestbuy
+package com.lucaseox.generatedappsfigmatemplates.navigation.v1.bestbuy
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController

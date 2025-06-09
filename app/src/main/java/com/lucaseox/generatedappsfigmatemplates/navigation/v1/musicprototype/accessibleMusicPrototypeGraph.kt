@@ -1,4 +1,4 @@
-package com.lucaseox.generatedappsfigmatemplates.navigation.musicprototype
+package com.lucaseox.generatedappsfigmatemplates.navigation.v1.musicprototype
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController

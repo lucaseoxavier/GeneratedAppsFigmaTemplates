@@ -1,4 +1,4 @@
-package com.lucaseox.generatedappsfigmatemplates.navigation.foodordering
+package com.lucaseox.generatedappsfigmatemplates.navigation.v1.foodordering
 
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
