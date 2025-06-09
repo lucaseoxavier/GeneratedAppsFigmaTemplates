@@ -29,7 +29,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredRSPCAMenuBu
 fun NavGraphBuilder.accessibleRspcaGraph(navController: NavHostController) {
     navigation<Router.RefactoredRSPCA.Route>(startDestination = Router.RefactoredRSPCA.MenuScreen) {
         composable<Router.RefactoredRSPCA.MenuScreen> {
-            GridScreen(navController, refactoredRSPCAMenuButtons)
+            GridScreen(navController, refactoredRSPCAMenuButtons, Router.RefactoredRSPCA.MenuScreen.name)
         }
         composable<Router.RefactoredRSPCA.StartScreen> {
             StartScreen()

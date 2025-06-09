@@ -15,7 +15,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.toDoMenuButtons
 fun NavGraphBuilder.toDoGraph(navController: NavHostController) {
     navigation<Router.ToDo.Route>(startDestination = Router.ToDo.MenuScreen) {
         composable<Router.ToDo.MenuScreen> {
-            GridScreen(navController, toDoMenuButtons)
+            GridScreen(navController, toDoMenuButtons, Router.ToDo.MenuScreen.name)
         }
         composable<Router.ToDo.StartScreen> {
             OnboardingScreen()

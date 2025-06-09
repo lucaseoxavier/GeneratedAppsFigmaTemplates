@@ -32,7 +32,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.bcaMenuButtons
 fun NavGraphBuilder.bcaGraph(navController: NavHostController) {
     navigation<Router.BCA.Route>(startDestination = Router.BCA.MenuScreen) {
         composable<Router.BCA.MenuScreen> {
-            GridScreen(navController, bcaMenuButtons)
+            GridScreen(navController, bcaMenuButtons, Router.BCA.MenuScreen.name)
         }
         composable<Router.BCA.LoginScreen> {
             LoginScreen()

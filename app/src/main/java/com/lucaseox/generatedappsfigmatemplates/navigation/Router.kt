@@ -36,8 +36,8 @@ sealed class Router {
 
     @Serializable
     sealed class RefactoredAnimalWiki(val name: String) : Router() {
-        @Serializable data object Route : RefactoredAnimalWiki("Accessible Animal Wiki Route")
-        @Serializable data object MenuScreen : RefactoredAnimalWiki("Accessible Animal Wiki Menu")
+        @Serializable data object Route : RefactoredAnimalWiki("Refactored Animal Wiki Route")
+        @Serializable data object MenuScreen : RefactoredAnimalWiki("Animal Wiki Menu Refactored")
         @Serializable data object SplashScreen : RefactoredAnimalWiki("Splash Screen")
         @Serializable data object LoginScreen : RefactoredAnimalWiki("Login Screen")
         @Serializable data object DashboardScreen : RefactoredAnimalWiki("Dashboard Screen")
@@ -73,8 +73,8 @@ sealed class Router {
 
     @Serializable
     sealed class RefactoredBCA(val name: String) : Router() {
-        @Serializable data object Route : RefactoredBCA("Accessible BCA Route")
-        @Serializable data object MenuScreen : RefactoredBCA("Accessible BCA Menu")
+        @Serializable data object Route : RefactoredBCA("Refactored BCA Route")
+        @Serializable data object MenuScreen : RefactoredBCA("BCA Menu Refactored")
         @Serializable data object LoginScreen : RefactoredBCA("Login Screen")
         @Serializable data object HomeScreen : RefactoredBCA("Home Screen")
         @Serializable data object ScanQrScreen : RefactoredBCA("Scan Qr Screen")
@@ -110,8 +110,8 @@ sealed class Router {
 
     @Serializable
     sealed class RefactoredBestBuy(val name: String) : Router() {
-        @Serializable data object Route : RefactoredBestBuy("Accessible Best Buy Route")
-        @Serializable data object MenuScreen : RefactoredBestBuy("Accessible Best Buy Menu")
+        @Serializable data object Route : RefactoredBestBuy("Refactored Best Buy Route")
+        @Serializable data object MenuScreen : RefactoredBestBuy("Best Buy Menu Refactored")
         @Serializable data object HomeScreen : RefactoredBestBuy("Home Screen")
         @Serializable data object ProductScreen : RefactoredBestBuy("Product Screen")
         @Serializable data object CartScreen : RefactoredBestBuy("Cart Screen")
@@ -130,8 +130,8 @@ sealed class Router {
 
     @Serializable
     sealed class RefactoredFoodOrdering(val name: String) : Router() {
-        @Serializable data object Route : RefactoredFoodOrdering("Accessible Food Ordering Route")
-        @Serializable data object MenuScreen : RefactoredFoodOrdering("Accessible Food Ordering Menu")
+        @Serializable data object Route : RefactoredFoodOrdering("Refactored Food Ordering Route")
+        @Serializable data object MenuScreen : RefactoredFoodOrdering("Food Ordering Menu Refactored")
         @Serializable data object HomeScreen : RefactoredFoodOrdering("Home Screen")
         @Serializable data object OrderScreen : RefactoredFoodOrdering("Order Screen")
         @Serializable data object CartScreen : RefactoredFoodOrdering("Cart Screen")
@@ -148,8 +148,8 @@ sealed class Router {
 
     @Serializable
     sealed class RefactoredKapuhaMusic(val name: String) : Router() {
-        @Serializable data object Route : RefactoredKapuhaMusic("Accessible Kapuha Music Route")
-        @Serializable data object MenuScreen : RefactoredKapuhaMusic("Accessible Kapuha Music Menu")
+        @Serializable data object Route : RefactoredKapuhaMusic("Refactored Kapuha Music Route")
+        @Serializable data object MenuScreen : RefactoredKapuhaMusic("Kapuha Music Menu Refactored")
         @Serializable data object StartScreen : RefactoredKapuhaMusic("Start Screen")
         @Serializable data object HomeScreen : RefactoredKapuhaMusic("Home Screen")
     }
@@ -164,8 +164,8 @@ sealed class Router {
 
     @Serializable
     sealed class RefactoredMusicPrototype(val name: String) : Router() {
-        @Serializable data object Route : RefactoredMusicPrototype("Accessible Music Prototype Route")
-        @Serializable data object MenuScreen : RefactoredMusicPrototype("Accessible Music Prototype Menu")
+        @Serializable data object Route : RefactoredMusicPrototype("Refactored Music Prototype Route")
+        @Serializable data object MenuScreen : RefactoredMusicPrototype("Music Prototype Menu Refactored")
         @Serializable data object HomeScreen : RefactoredMusicPrototype("Home Screen")
         @Serializable data object PlayerScreen : RefactoredMusicPrototype("Player Screen")
     }
@@ -197,8 +197,8 @@ sealed class Router {
 
     @Serializable
     sealed class RefactoredRSPCA(val name: String) : Router() {
-        @Serializable data object Route : RefactoredRSPCA("Accessible RSPCA Route")
-        @Serializable data object MenuScreen : RefactoredRSPCA("Accessible RSPCA Menu")
+        @Serializable data object Route : RefactoredRSPCA("Refactored RSPCA Route")
+        @Serializable data object MenuScreen : RefactoredRSPCA("RSPCA Menu Refactored")
         @Serializable data object StartScreen : RefactoredRSPCA("Start Screen")
         @Serializable data object LoginScreen : RefactoredRSPCA("Login Screen")
         @Serializable data object HomeScreen : RefactoredRSPCA("Home Screen")
@@ -232,8 +232,8 @@ sealed class Router {
 
     @Serializable
     sealed class RefactoredToDo(val name: String) : Router() {
-        @Serializable data object Route : RefactoredToDo("Accessible ToDo Route")
-        @Serializable data object MenuScreen : RefactoredToDo("Accessible ToDo Menu")
+        @Serializable data object Route : RefactoredToDo("Refactored ToDo Route")
+        @Serializable data object MenuScreen : RefactoredToDo("ToDo Menu Refactored")
         @Serializable data object StartScreen : RefactoredToDo("Start Screen")
         @Serializable data object RegisterScreen : RefactoredToDo("Register Screen")
         @Serializable data object LoginScreen : RefactoredToDo("Login Screen")

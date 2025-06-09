@@ -15,7 +15,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.foodOrderingMenuButto
 fun NavGraphBuilder.foodOrderingGraph(navController: NavHostController) {
     navigation<Router.FoodOrdering.Route>(startDestination = Router.FoodOrdering.MenuScreen) {
         composable<Router.FoodOrdering.MenuScreen> {
-            GridScreen(navController, foodOrderingMenuButtons)
+            GridScreen(navController, foodOrderingMenuButtons, Router.FoodOrdering.MenuScreen.name)
         }
         composable<Router.FoodOrdering.HomeScreen> {
             HomeScreen()

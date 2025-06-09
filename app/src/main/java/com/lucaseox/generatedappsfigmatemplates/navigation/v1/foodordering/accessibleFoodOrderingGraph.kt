@@ -15,7 +15,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredFoodOrderin
 fun NavGraphBuilder.accessibleFoodOrderingGraph(navController: NavHostController) {
     navigation<Router.RefactoredFoodOrdering.Route>(startDestination = Router.RefactoredFoodOrdering.MenuScreen) {
         composable<Router.RefactoredFoodOrdering.MenuScreen> {
-            GridScreen(navController, refactoredFoodOrderingMenuButtons)
+            GridScreen(navController, refactoredFoodOrderingMenuButtons, Router.RefactoredFoodOrdering.MenuScreen.name)
         }
         composable<Router.RefactoredFoodOrdering.HomeScreen> {
             HomeScreen()

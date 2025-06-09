@@ -16,7 +16,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.animalWikiMenuButtons
 fun NavGraphBuilder.animalWikiGraph(navController: NavHostController) {
     navigation<Router.AnimalWiki.Route>(startDestination = Router.AnimalWiki.MenuScreen) {
         composable<Router.AnimalWiki.MenuScreen> {
-            GridScreen(navController, animalWikiMenuButtons)
+            GridScreen(navController, animalWikiMenuButtons, Router.AnimalWiki.MenuScreen.name)
         }
         composable<Router.AnimalWiki.SplashScreen> {
             SplashScreen()

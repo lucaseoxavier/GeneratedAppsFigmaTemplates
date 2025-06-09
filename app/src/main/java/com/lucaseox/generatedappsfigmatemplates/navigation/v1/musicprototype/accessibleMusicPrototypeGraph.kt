@@ -12,7 +12,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredMusicProtot
 fun NavGraphBuilder.accessibleMusicPrototypeGraph(navController: NavHostController) {
     navigation<Router.RefactoredMusicPrototype.Route>(startDestination = Router.RefactoredMusicPrototype.MenuScreen) {
         composable<Router.RefactoredMusicPrototype.MenuScreen> {
-            GridScreen(navController, refactoredMusicPrototypeMenuButtons)
+            GridScreen(navController, refactoredMusicPrototypeMenuButtons, Router.RefactoredMusicPrototype.MenuScreen.name)
         }
         composable<Router.RefactoredMusicPrototype.HomeScreen> {
             HomeScreen()

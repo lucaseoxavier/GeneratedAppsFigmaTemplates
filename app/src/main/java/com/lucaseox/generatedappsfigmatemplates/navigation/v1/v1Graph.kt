@@ -11,7 +11,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.v1AppMenuButtons
 fun NavGraphBuilder.v1Graph(navController: NavHostController) {
     navigation<Router.V1.Route>(startDestination = Router.V1.MenuScreen) {
         composable<Router.V1.MenuScreen> {
-            GridScreen(navController, v1AppMenuButtons)
+            GridScreen(navController, v1AppMenuButtons, Router.V1.Route.name)
         }
     }
 }

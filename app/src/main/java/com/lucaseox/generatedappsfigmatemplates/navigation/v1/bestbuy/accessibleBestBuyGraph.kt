@@ -15,7 +15,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredBestBuyMenu
 fun NavGraphBuilder.accessibleBestBuyGraph(navController: NavHostController) {
     navigation<Router.RefactoredBestBuy.Route>(startDestination = Router.RefactoredBestBuy.MenuScreen) {
         composable<Router.RefactoredBestBuy.MenuScreen> {
-            GridScreen(navController, refactoredBestBuyMenuButtons)
+            GridScreen(navController, refactoredBestBuyMenuButtons, Router.RefactoredBestBuy.MenuScreen.name)
         }
         composable<Router.RefactoredBestBuy.HomeScreen> {
             HomeScreen()

@@ -13,7 +13,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredKapuhaMusic
 fun NavGraphBuilder.accessibleKapuhaMusicGraph(navController: NavHostController) {
     navigation<Router.RefactoredKapuhaMusic.Route>(startDestination = Router.RefactoredKapuhaMusic.MenuScreen) {
         composable<Router.RefactoredKapuhaMusic.MenuScreen> {
-            GridScreen(navController, refactoredKapuhaMusicMenuButtons)
+            GridScreen(navController, refactoredKapuhaMusicMenuButtons, Router.RefactoredKapuhaMusic.MenuScreen.name)
         }
         composable<Router.RefactoredKapuhaMusic.StartScreen> {
             KapuhaIntroScreen()

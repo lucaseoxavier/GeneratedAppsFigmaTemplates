@@ -28,10 +28,10 @@ import androidx.navigation.NavHostController
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun GridScreen(navController: NavHostController, buttons: List<Pair<String, Router>>) {
+fun GridScreen(navController: NavHostController, buttons: List<Pair<String, Router>>, title: String = "AI Generated Apps") {
     Scaffold(
         topBar = {
-            TopAppBar(title = { Text("AI Generated Apps") })
+            TopAppBar(title = { Text(title) })
         }
     ) { paddingValues ->
         Box(

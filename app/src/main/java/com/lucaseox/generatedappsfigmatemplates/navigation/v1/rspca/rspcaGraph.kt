@@ -30,7 +30,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.Router
 fun NavGraphBuilder.rspcaGraph(navController: NavHostController) {
     navigation<Router.RSPCA.Route>(startDestination = Router.RSPCA.MenuScreen) {
         composable<Router.RSPCA.MenuScreen> {
-            GridScreen(navController, RSPCAMenuButtons)
+            GridScreen(navController, RSPCAMenuButtons, Router.RSPCA.MenuScreen.name)
         }
         composable<Router.RSPCA.StartScreen> {
             StartScreen()
