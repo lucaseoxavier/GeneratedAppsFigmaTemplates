@@ -239,4 +239,136 @@ sealed class Router {
         @Serializable data object LoginScreen : RefactoredToDo("Login Screen")
         @Serializable data object ToDoScreen : RefactoredToDo("ToDo Screen")
     }
+
+    @Serializable
+    sealed class BCAV2(val name: String) : Router() {
+        @Serializable data object Route : BCAV2("BCA V2 Route")
+        @Serializable data object MenuScreen : BCAV2("BCA V2 Menu")
+        @Serializable data object ProfileScreen : BCAV2("Profile Screen")
+        @Serializable data object HomeScreen : BCAV2("Home Screen")
+        @Serializable data object TransactionScreen : BCAV2("Transaction Screen")
+        @Serializable data object ReceiverScreen : BCAV2("Receiver Screen")
+        @Serializable data object SetLimitScreen : BCAV2("Set Limit Screen")
+    }
+
+    @Serializable
+    sealed class RefactoredBCAV2(val name: String) : Router() {
+        @Serializable data object Route : RefactoredBCAV2("Refactored BCA V2 Route")
+        @Serializable data object MenuScreen : RefactoredBCAV2("Refactored BCA V2 Menu")
+        @Serializable data object ProfileScreen : RefactoredBCAV2("Profile Screen")
+        @Serializable data object HomeScreen : RefactoredBCAV2("Home Screen")
+        @Serializable data object TransactionScreen : RefactoredBCAV2("Transaction Screen")
+        @Serializable data object ReceiverScreen : RefactoredBCAV2("Receiver Screen")
+        @Serializable data object SetLimitScreen : RefactoredBCAV2("Set Limit Screen")
+    }
+
+    @Serializable
+    sealed class AnimalWikiV2(val name: String) : Router() {
+        @Serializable data object Route : AnimalWikiV2("Animal Wiki V2 Route")
+        @Serializable data object MenuScreen : AnimalWikiV2("Animal Wiki V2 Menu")
+        @Serializable data object DashboardScreen : AnimalWikiV2("Dashboard Screen")
+    }
+
+    @Serializable
+    sealed class RefactoredAnimalWikiV2(val name: String) : Router() {
+        @Serializable data object Route : RefactoredAnimalWikiV2("Refactored Animal Wiki V2 Route")
+        @Serializable data object MenuScreen : RefactoredAnimalWikiV2("Refactored Animal Wiki V2 Menu")
+        @Serializable data object DashboardScreen : RefactoredAnimalWikiV2("Dashboard Screen")
+    }
+
+    @Serializable
+    sealed class RSPCAV2(val name: String) : Router() {
+        @Serializable data object Route : RSPCAV2("RSPCA V2 Route")
+        @Serializable data object MenuScreen : RSPCAV2("RSPCA V2 Menu")
+        @Serializable data object VetScreen : RSPCAV2("Vet Screen")
+    }
+
+    @Serializable
+    sealed class RefactoredRSPCAV2(val name: String) : Router() {
+        @Serializable data object Route : RefactoredRSPCAV2("Refactored RSPCA V2 Route")
+        @Serializable data object MenuScreen : RefactoredRSPCAV2("Refactored RSPCA V2 Menu")
+        @Serializable data object VetScreen : RefactoredRSPCAV2("Vet Screen")
+    }
+
+    @Serializable
+    sealed class KapuhaMusicV2(val name: String) : Router() {
+        @Serializable data object Route : KapuhaMusicV2("Kapuha Music V2 Route")
+        @Serializable data object MenuScreen : KapuhaMusicV2("Kapuha Music V2 Menu")
+        @Serializable data object HomeScreen : KapuhaMusicV2("Home Screen")
+        @Serializable data object StartScreen : KapuhaMusicV2("Start Screen")
+    }
+
+    @Serializable
+    sealed class RefactoredKapuhaMusicV2(val name: String) : Router() {
+        @Serializable data object Route : RefactoredKapuhaMusicV2("Refactored Kapuha Music V2 Route")
+        @Serializable data object MenuScreen : RefactoredKapuhaMusicV2("Refactored Kapuha Music V2 Menu")
+        @Serializable data object HomeScreen : RefactoredKapuhaMusicV2("Home Screen")
+        @Serializable data object StartScreen : RefactoredKapuhaMusicV2("Start Screen")
+    }
+
+    @Serializable
+    sealed class BCAV3(val name: String) : Router() {
+        @Serializable data object Route : BCAV3("BCA V3 Route")
+        @Serializable data object MenuScreen : BCAV3("BCA V3 Menu")
+        @Serializable data object ProfileScreen : BCAV3("Profile Screen")
+        @Serializable data object HomeScreen : BCAV3("Home Screen")
+        @Serializable data object TransactionScreen : BCAV3("Transaction Screen")
+        @Serializable data object ReceiverScreen : BCAV3("Receiver Screen")
+        @Serializable data object SetLimitScreen : BCAV3("Set Limit Screen")
+    }
+
+    @Serializable
+    sealed class RefactoredBCAV3(val name: String) : Router() {
+        @Serializable data object Route : RefactoredBCAV3("Refactored BCA V3 Route")
+        @Serializable data object MenuScreen : RefactoredBCAV3("Refactored BCA V3 Menu")
+        @Serializable data object ProfileScreen : RefactoredBCAV3("Profile Screen")
+        @Serializable data object HomeScreen : RefactoredBCAV3("Home Screen")
+        @Serializable data object TransactionScreen : RefactoredBCAV3("Transaction Screen")
+        @Serializable data object ReceiverScreen : RefactoredBCAV3("Receiver Screen")
+        @Serializable data object SetLimitScreen : RefactoredBCAV3("Set Limit Screen")
+    }
+
+    @Serializable
+    sealed class AnimalWikiV3(val name: String) : Router() {
+        @Serializable data object Route : AnimalWikiV3("Animal Wiki V3 Route")
+        @Serializable data object MenuScreen : AnimalWikiV3("Animal Wiki V3 Menu")
+        @Serializable data object DashboardScreen : AnimalWikiV3("Dashboard Screen")
+    }
+
+    @Serializable
+    sealed class RefactoredAnimalWikiV3(val name: String) : Router() {
+        @Serializable data object Route : RefactoredAnimalWikiV3("Refactored Animal Wiki V3 Route")
+        @Serializable data object MenuScreen : RefactoredAnimalWikiV3("Refactored Animal Wiki V3 Menu")
+        @Serializable data object DashboardScreen : RefactoredAnimalWikiV3("Dashboard Screen")
+    }
+
+    @Serializable
+    sealed class RSPCAV3(val name: String) : Router() {
+        @Serializable data object Route : RSPCAV3("RSPCA V3 Route")
+        @Serializable data object MenuScreen : RSPCAV3("RSPCA V3 Menu")
+        @Serializable data object VetScreen : RSPCAV3("Vet Screen")
+    }
+
+    @Serializable
+    sealed class RefactoredRSPCAV3(val name: String) : Router() {
+        @Serializable data object Route : RefactoredRSPCAV3("Refactored RSPCA V3 Route")
+        @Serializable data object MenuScreen : RefactoredRSPCAV3("Refactored RSPCA V3 Menu")
+        @Serializable data object VetScreen : RefactoredRSPCAV3("Vet Screen")
+    }
+
+    @Serializable
+    sealed class KapuhaMusicV3(val name: String) : Router() {
+        @Serializable data object Route : KapuhaMusicV3("Kapuha Music V3 Route")
+        @Serializable data object MenuScreen : KapuhaMusicV3("Kapuha Music V3 Menu")
+        @Serializable data object HomeScreen : KapuhaMusicV3("Home Screen")
+        @Serializable data object StartScreen : KapuhaMusicV3("Start Screen")
+    }
+
+    @Serializable
+    sealed class RefactoredKapuhaMusicV3(val name: String) : Router() {
+        @Serializable data object Route : RefactoredKapuhaMusicV3("Refactored Kapuha Music V3 Route")
+        @Serializable data object MenuScreen : RefactoredKapuhaMusicV3("Refactored Kapuha Music V3 Menu")
+        @Serializable data object HomeScreen : RefactoredKapuhaMusicV3("Home Screen")
+        @Serializable data object StartScreen : RefactoredKapuhaMusicV3("Start Screen")
+    }
 }

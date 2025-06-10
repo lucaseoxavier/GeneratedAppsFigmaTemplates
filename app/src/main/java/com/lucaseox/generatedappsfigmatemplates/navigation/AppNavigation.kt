@@ -21,7 +21,23 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.v1.rspca.rspcaGraph
 import com.lucaseox.generatedappsfigmatemplates.navigation.v1.todo.refactoredToDoGraph
 import com.lucaseox.generatedappsfigmatemplates.navigation.v1.todo.toDoGraph
 import com.lucaseox.generatedappsfigmatemplates.navigation.v1.v1Graph
+import com.lucaseox.generatedappsfigmatemplates.navigation.v2.animalwiki.animalWikiGraphV2
+import com.lucaseox.generatedappsfigmatemplates.navigation.v2.animalwiki.refactoredAnimalWikiGraphV2
+import com.lucaseox.generatedappsfigmatemplates.navigation.v2.bca.bcaGraphV2
+import com.lucaseox.generatedappsfigmatemplates.navigation.v2.bca.refactoredBcaGraphV2
+import com.lucaseox.generatedappsfigmatemplates.navigation.v2.kapuhamusic.kapuhaMusicGraphV2
+import com.lucaseox.generatedappsfigmatemplates.navigation.v2.kapuhamusic.refactoredKapuhaMusicGraphV2
+import com.lucaseox.generatedappsfigmatemplates.navigation.v2.rspca.refactoredRspcaGraphV2
+import com.lucaseox.generatedappsfigmatemplates.navigation.v2.rspca.rspcaGraphV2
 import com.lucaseox.generatedappsfigmatemplates.navigation.v2.v2Graph
+import com.lucaseox.generatedappsfigmatemplates.navigation.v3.animalwiki.animalWikiGraphV3
+import com.lucaseox.generatedappsfigmatemplates.navigation.v3.animalwiki.refactoredAnimalWikiGraphV3
+import com.lucaseox.generatedappsfigmatemplates.navigation.v3.bca.bcaGraphV3
+import com.lucaseox.generatedappsfigmatemplates.navigation.v3.bca.refactoredBcaGraphV3
+import com.lucaseox.generatedappsfigmatemplates.navigation.v3.kapuhamusic.kapuhaMusicGraphV3
+import com.lucaseox.generatedappsfigmatemplates.navigation.v3.kapuhamusic.refactoredKapuhaMusicGraphV3
+import com.lucaseox.generatedappsfigmatemplates.navigation.v3.rspca.refactoredRspcaGraphV3
+import com.lucaseox.generatedappsfigmatemplates.navigation.v3.rspca.rspcaGraphV3
 import com.lucaseox.generatedappsfigmatemplates.navigation.v3.v3Graph
 
 @Composable
@@ -65,5 +81,29 @@ fun AppNavigation(
 
         toDoGraph(navController)
         refactoredToDoGraph(navController)
+
+        bcaGraphV2(navController)
+        refactoredBcaGraphV2(navController)
+
+        animalWikiGraphV2(navController)
+        refactoredAnimalWikiGraphV2(navController)
+
+        rspcaGraphV2(navController)
+        refactoredRspcaGraphV2(navController)
+
+        kapuhaMusicGraphV2(navController)
+        refactoredKapuhaMusicGraphV2(navController)
+
+        bcaGraphV3(navController)
+        refactoredBcaGraphV3(navController)
+
+        animalWikiGraphV3(navController)
+        refactoredAnimalWikiGraphV3(navController)
+
+        rspcaGraphV3(navController)
+        refactoredRspcaGraphV3(navController)
+
+        kapuhaMusicGraphV3(navController)
+        refactoredKapuhaMusicGraphV3(navController)
     }
 }

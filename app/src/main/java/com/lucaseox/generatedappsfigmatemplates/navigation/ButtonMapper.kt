@@ -25,9 +25,27 @@ val v1AppMenuButtons = listOf(
     Router.RefactoredToDo.MenuScreen.name to            Router.RefactoredToDo.Route
 )
 
-val v2AppMenuButtons = emptyList<Pair<String, Router>>()
+val v2AppMenuButtons = listOf(
+    Router.BCAV2.MenuScreen.name to Router.BCAV2.Route,
+    Router.RefactoredBCAV2.MenuScreen.name to Router.RefactoredBCAV2.Route,
+    Router.AnimalWikiV2.MenuScreen.name to Router.AnimalWikiV2.Route,
+    Router.RefactoredAnimalWikiV2.MenuScreen.name to Router.RefactoredAnimalWikiV2.Route,
+    Router.RSPCAV2.MenuScreen.name to Router.RSPCAV2.Route,
+    Router.RefactoredRSPCAV2.MenuScreen.name to Router.RefactoredRSPCAV2.Route,
+    Router.KapuhaMusicV2.MenuScreen.name to Router.KapuhaMusicV2.Route,
+    Router.RefactoredKapuhaMusicV2.MenuScreen.name to Router.RefactoredKapuhaMusicV2.Route
+)
 
-val v3AppMenuButtons = emptyList<Pair<String, Router>>()
+val v3AppMenuButtons = listOf(
+    Router.BCAV3.MenuScreen.name to Router.BCAV3.Route,
+    Router.RefactoredBCAV3.MenuScreen.name to Router.RefactoredBCAV3.Route,
+    Router.AnimalWikiV3.MenuScreen.name to Router.AnimalWikiV3.Route,
+    Router.RefactoredAnimalWikiV3.MenuScreen.name to Router.RefactoredAnimalWikiV3.Route,
+    Router.RSPCAV3.MenuScreen.name to Router.RSPCAV3.Route,
+    Router.RefactoredRSPCAV3.MenuScreen.name to Router.RefactoredRSPCAV3.Route,
+    Router.KapuhaMusicV3.MenuScreen.name to Router.KapuhaMusicV3.Route,
+    Router.RefactoredKapuhaMusicV3.MenuScreen.name to Router.RefactoredKapuhaMusicV3.Route
+)
 
 val bestBuyMenuButtons = listOf(
     Router.BestBuy.HomeScreen.name to       Router.BestBuy.HomeScreen,
@@ -195,4 +213,88 @@ val kapuhaMusicMenuButtons = listOf(
 val refactoredKapuhaMusicMenuButtons = listOf(
     Router.RefactoredKapuhaMusic.StartScreen.name to  Router.RefactoredKapuhaMusic.StartScreen,
     Router.RefactoredKapuhaMusic.HomeScreen.name to   Router.RefactoredKapuhaMusic.HomeScreen
+)
+
+val v2BcaMenuButtons = listOf(
+    Router.BCAV2.ProfileScreen.name to          Router.BCAV2.ProfileScreen,
+    Router.BCAV2.HomeScreen.name to             Router.BCAV2.HomeScreen,
+    Router.BCAV2.TransactionScreen.name to      Router.BCAV2.TransactionScreen,
+    Router.BCAV2.ReceiverScreen.name to         Router.BCAV2.ReceiverScreen,
+    Router.BCAV2.SetLimitScreen.name to         Router.BCAV2.SetLimitScreen,
+)
+
+val refactoredV2BcaMenuButtons = listOf(
+    Router.RefactoredBCAV2.ProfileScreen.name to          Router.RefactoredBCAV2.ProfileScreen,
+    Router.RefactoredBCAV2.HomeScreen.name to             Router.RefactoredBCAV2.HomeScreen,
+    Router.RefactoredBCAV2.TransactionScreen.name to      Router.RefactoredBCAV2.TransactionScreen,
+    Router.RefactoredBCAV2.ReceiverScreen.name to         Router.RefactoredBCAV2.ReceiverScreen,
+    Router.RefactoredBCAV2.SetLimitScreen.name to         Router.RefactoredBCAV2.SetLimitScreen,
+)
+
+val V2AnimalWikiMenuButtons = listOf(
+    Router.AnimalWikiV2.DashboardScreen.name to Router.AnimalWikiV2.DashboardScreen
+)
+
+val refactoredV2AnimalWikiMenuButtons = listOf(
+    Router.RefactoredAnimalWikiV2.DashboardScreen.name to Router.RefactoredAnimalWikiV2.DashboardScreen
+)
+
+val v2RSPCAMenuButtons = listOf(
+    Router.RSPCAV2.VetScreen.name to Router.RSPCAV2.VetScreen
+)
+
+val refactoredV2RSPCAMenuButtons = listOf(
+    Router.RefactoredRSPCAV2.VetScreen.name to Router.RefactoredRSPCAV2.VetScreen
+)
+
+val v2KapuhaMusicMenuButtons = listOf(
+    Router.KapuhaMusicV2.HomeScreen.name to     Router.KapuhaMusicV2.HomeScreen,
+    Router.KapuhaMusicV2.StartScreen.name to    Router.KapuhaMusicV2.StartScreen
+)
+
+val refactoredV2KapuhaMusicMenuButtons = listOf(
+    Router.RefactoredKapuhaMusicV2.HomeScreen.name to   Router.RefactoredKapuhaMusicV2.HomeScreen,
+    Router.RefactoredKapuhaMusicV2.StartScreen.name to  Router.RefactoredKapuhaMusicV2.StartScreen
+)
+
+val v3BcaMenuButtons = listOf(
+    Router.BCAV3.ProfileScreen.name to          Router.BCAV3.ProfileScreen,
+    Router.BCAV3.HomeScreen.name to             Router.BCAV3.HomeScreen,
+    Router.BCAV3.TransactionScreen.name to      Router.BCAV3.TransactionScreen,
+    Router.BCAV3.ReceiverScreen.name to         Router.BCAV3.ReceiverScreen,
+    Router.BCAV3.SetLimitScreen.name to         Router.BCAV3.SetLimitScreen,
+)
+
+val refactoredV3BcaMenuButtons = listOf(
+    Router.RefactoredBCAV3.ProfileScreen.name to          Router.RefactoredBCAV3.ProfileScreen,
+    Router.RefactoredBCAV3.HomeScreen.name to             Router.RefactoredBCAV3.HomeScreen,
+    Router.RefactoredBCAV3.TransactionScreen.name to      Router.RefactoredBCAV3.TransactionScreen,
+    Router.RefactoredBCAV3.ReceiverScreen.name to         Router.RefactoredBCAV3.ReceiverScreen,
+    Router.RefactoredBCAV3.SetLimitScreen.name to         Router.RefactoredBCAV3.SetLimitScreen,
+)
+
+val V3AnimalWikiMenuButtons = listOf(
+    Router.AnimalWikiV3.DashboardScreen.name to Router.AnimalWikiV3.DashboardScreen
+)
+
+val refactoredV3AnimalWikiMenuButtons = listOf(
+    Router.RefactoredAnimalWikiV3.DashboardScreen.name to Router.RefactoredAnimalWikiV3.DashboardScreen
+)
+
+val v3RSPCAMenuButtons = listOf(
+    Router.RSPCAV3.VetScreen.name to Router.RSPCAV3.VetScreen
+)
+
+val refactoredV3RSPCAMenuButtons = listOf(
+    Router.RefactoredRSPCAV3.VetScreen.name to Router.RefactoredRSPCAV3.VetScreen
+)
+
+val v3KapuhaMusicMenuButtons = listOf(
+    Router.KapuhaMusicV3.HomeScreen.name to     Router.KapuhaMusicV3.HomeScreen,
+    Router.KapuhaMusicV3.StartScreen.name to    Router.KapuhaMusicV3.StartScreen
+)
+
+val refactoredV3KapuhaMusicMenuButtons = listOf(
+    Router.RefactoredKapuhaMusicV3.HomeScreen.name to   Router.RefactoredKapuhaMusicV3.HomeScreen,
+    Router.RefactoredKapuhaMusicV3.StartScreen.name to  Router.RefactoredKapuhaMusicV3.StartScreen
 )
