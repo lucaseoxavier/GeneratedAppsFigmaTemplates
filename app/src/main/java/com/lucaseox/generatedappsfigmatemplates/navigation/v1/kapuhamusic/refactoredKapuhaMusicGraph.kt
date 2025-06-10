@@ -10,7 +10,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
 import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredKapuhaMusicMenuButtons
 
-fun NavGraphBuilder.accessibleKapuhaMusicGraph(navController: NavHostController) {
+fun NavGraphBuilder.refactoredKapuhaMusicGraph(navController: NavHostController) {
     navigation<Router.RefactoredKapuhaMusic.Route>(startDestination = Router.RefactoredKapuhaMusic.MenuScreen) {
         composable<Router.RefactoredKapuhaMusic.MenuScreen> {
             GridScreen(navController, refactoredKapuhaMusicMenuButtons, Router.RefactoredKapuhaMusic.MenuScreen.name)

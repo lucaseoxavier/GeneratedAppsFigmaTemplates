@@ -28,7 +28,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
 import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredBcaMenuButtons
 
-fun NavGraphBuilder.accessibleBcaGraph(navController: NavHostController) {
+fun NavGraphBuilder.refactoredBcaGraph(navController: NavHostController) {
     navigation<Router.RefactoredBCA.Route>(startDestination = Router.RefactoredBCA.MenuScreen) {
         composable<Router.RefactoredBCA.MenuScreen> {
             GridScreen(navController, refactoredBcaMenuButtons, Router.RefactoredBCA.MenuScreen.name)

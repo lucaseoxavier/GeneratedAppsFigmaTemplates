@@ -12,7 +12,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
 import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredToDoMenuButtons
 
-fun NavGraphBuilder.accessibleToDoGraph(navController: NavHostController) {
+fun NavGraphBuilder.refactoredToDoGraph(navController: NavHostController) {
     navigation<Router.RefactoredToDo.Route>(startDestination = Router.RefactoredToDo.MenuScreen) {
         composable<Router.RefactoredToDo.MenuScreen> {
             GridScreen(navController, refactoredToDoMenuButtons, Router.RefactoredToDo.MenuScreen.name)

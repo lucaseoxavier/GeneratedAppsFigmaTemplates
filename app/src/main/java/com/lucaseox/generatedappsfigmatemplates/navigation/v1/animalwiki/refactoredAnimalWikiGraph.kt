@@ -12,7 +12,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
 import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredAnimalWikiMenuButtons
 
-fun NavGraphBuilder.accessibleAnimalWikiGraph(navController: NavHostController) {
+fun NavGraphBuilder.refactoredAnimalWikiGraph(navController: NavHostController) {
     navigation<Router.RefactoredAnimalWiki.Route>(startDestination = Router.RefactoredAnimalWiki.MenuScreen) {
         composable<Router.RefactoredAnimalWiki.MenuScreen> {
             GridScreen(navController, refactoredAnimalWikiMenuButtons, Router.RefactoredAnimalWiki.MenuScreen.name)

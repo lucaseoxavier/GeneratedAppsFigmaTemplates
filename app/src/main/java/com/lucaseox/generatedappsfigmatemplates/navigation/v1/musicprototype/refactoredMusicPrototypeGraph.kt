@@ -9,7 +9,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
 import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredMusicPrototypeMenuButtons
 
-fun NavGraphBuilder.accessibleMusicPrototypeGraph(navController: NavHostController) {
+fun NavGraphBuilder.refactoredMusicPrototypeGraph(navController: NavHostController) {
     navigation<Router.RefactoredMusicPrototype.Route>(startDestination = Router.RefactoredMusicPrototype.MenuScreen) {
         composable<Router.RefactoredMusicPrototype.MenuScreen> {
             GridScreen(navController, refactoredMusicPrototypeMenuButtons, Router.RefactoredMusicPrototype.MenuScreen.name)

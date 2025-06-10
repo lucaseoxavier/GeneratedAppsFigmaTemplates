@@ -12,7 +12,7 @@ import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
 import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredFoodOrderingMenuButtons
 
-fun NavGraphBuilder.accessibleFoodOrderingGraph(navController: NavHostController) {
+fun NavGraphBuilder.refactoredFoodOrderingGraph(navController: NavHostController) {
     navigation<Router.RefactoredFoodOrdering.Route>(startDestination = Router.RefactoredFoodOrdering.MenuScreen) {
         composable<Router.RefactoredFoodOrdering.MenuScreen> {
             GridScreen(navController, refactoredFoodOrderingMenuButtons, Router.RefactoredFoodOrdering.MenuScreen.name)
