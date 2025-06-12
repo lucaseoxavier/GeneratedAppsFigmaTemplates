@@ -4,6 +4,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
+import com.lucaseox.generatedappsfigmatemplates.generatedscreens.initial.v3.rspca.VetScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
 import com.lucaseox.generatedappsfigmatemplates.navigation.v3RSPCAMenuButtons
@@ -14,6 +15,7 @@ fun NavGraphBuilder.rspcaGraphV3(navController: NavHostController) {
             GridScreen(navController, v3RSPCAMenuButtons, Router.RSPCAV3.MenuScreen.name)
         }
         composable<Router.RSPCAV3.VetScreen> {
+            VetScreen()
         }
     }
 }

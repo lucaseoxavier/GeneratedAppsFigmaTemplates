@@ -4,6 +4,7 @@ import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.composable
 import androidx.navigation.navigation
+import com.lucaseox.generatedappsfigmatemplates.generatedscreens.refactored.v3.animalwiki.AnimalWikiScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.GridScreen
 import com.lucaseox.generatedappsfigmatemplates.navigation.Router
 import com.lucaseox.generatedappsfigmatemplates.navigation.refactoredV3AnimalWikiMenuButtons
@@ -14,6 +15,7 @@ fun NavGraphBuilder.refactoredAnimalWikiGraphV3(navController: NavHostController
             GridScreen(navController, refactoredV3AnimalWikiMenuButtons, Router.RefactoredAnimalWikiV3.MenuScreen.name)
         }
         composable<Router.RefactoredAnimalWikiV3.DashboardScreen> {
+            AnimalWikiScreen()
         }
     }
 }
